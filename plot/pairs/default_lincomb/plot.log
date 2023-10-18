@@ -1,0 +1,76 @@
+2022-11-24 08:39:32,883 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'LinComb']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_lincomb/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:32,957 | INFO | processed resnet8 cifar10 default
+2022-11-24 08:39:32,967 | INFO | processed resnet8 cifar10 lincomb
+2022-11-24 08:39:33,255 | INFO | processed resnet14 cifar10 default
+2022-11-24 08:39:33,266 | INFO | processed resnet14 cifar10 lincomb
+2022-11-24 08:39:33,539 | INFO | processed resnet20 cifar10 default
+2022-11-24 08:39:33,549 | INFO | processed resnet20 cifar10 lincomb
+2022-11-24 08:39:33,821 | INFO | processed resnet26 cifar10 default
+2022-11-24 08:39:33,850 | INFO | processed resnet26 cifar10 lincomb
+2022-11-24 08:39:34,151 | INFO | processed resnet32 cifar10 default
+2022-11-24 08:39:34,167 | INFO | processed resnet32 cifar10 lincomb
+2022-11-24 08:39:34,490 | INFO | processed resnet44 cifar10 default
+2022-11-24 08:39:34,506 | INFO | processed resnet44 cifar10 lincomb
+2022-11-24 08:39:34,784 | INFO | processed resnet56 cifar10 default
+2022-11-24 08:39:34,795 | INFO | processed resnet56 cifar10 lincomb
+2023-01-05 20:37:37,634 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'LinComb']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_lincomb/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:37,699 | INFO | processed resnet8 cifar10 default
+2023-01-05 20:37:37,709 | INFO | processed resnet8 cifar10 lincomb
+2023-01-05 20:37:38,058 | INFO | processed resnet14 cifar10 default
+2023-01-05 20:37:38,067 | INFO | processed resnet14 cifar10 lincomb
+2023-01-05 20:37:38,364 | INFO | processed resnet20 cifar10 default
+2023-01-05 20:37:38,373 | INFO | processed resnet20 cifar10 lincomb
+2023-01-05 20:37:38,699 | INFO | processed resnet26 cifar10 default
+2023-01-05 20:37:38,707 | INFO | processed resnet26 cifar10 lincomb
+2023-01-05 20:37:39,011 | INFO | processed resnet32 cifar10 default
+2023-01-05 20:37:39,019 | INFO | processed resnet32 cifar10 lincomb
+2023-01-05 20:37:39,325 | INFO | processed resnet44 cifar10 default
+2023-01-05 20:37:39,335 | INFO | processed resnet44 cifar10 lincomb
+2023-01-05 20:37:39,623 | INFO | processed resnet56 cifar10 default
+2023-01-05 20:37:39,634 | INFO | processed resnet56 cifar10 lincomb
+2023-01-07 17:24:20,731 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'LinComb']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_lincomb/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:24:20,863 | INFO | processed resnet8 cifar10 default
+2023-01-07 17:24:20,875 | INFO | processed resnet8 cifar10 lincomb
+2023-01-07 17:24:21,422 | INFO | processed resnet14 cifar10 default
+2023-01-07 17:24:21,434 | INFO | processed resnet14 cifar10 lincomb
+2023-01-07 17:24:21,828 | INFO | processed resnet20 cifar10 default
+2023-01-07 17:24:21,838 | INFO | processed resnet20 cifar10 lincomb
+2023-01-07 17:24:22,183 | INFO | processed resnet26 cifar10 default
+2023-01-07 17:24:22,200 | INFO | processed resnet26 cifar10 lincomb
+2023-01-07 17:24:22,753 | INFO | processed resnet32 cifar10 default
+2023-01-07 17:24:22,763 | INFO | processed resnet32 cifar10 lincomb
+2023-01-07 17:24:23,163 | INFO | processed resnet44 cifar10 default
+2023-01-07 17:24:23,174 | INFO | processed resnet44 cifar10 lincomb
+2023-01-07 17:24:23,532 | INFO | processed resnet56 cifar10 default
+2023-01-07 17:24:23,543 | INFO | processed resnet56 cifar10 lincomb
+2023-01-10 15:41:53,055 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['Default', 'LinComb']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_lincomb/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:53,128 | INFO | processed dnn2 mnist default
+2023-01-10 15:41:53,137 | INFO | processed dnn2 mnist lincomb
+2023-01-10 15:41:53,505 | INFO | processed dnn3 mnist default
+2023-01-10 15:41:53,514 | INFO | processed dnn3 mnist lincomb
+2023-01-10 15:41:53,849 | INFO | processed dnn5 mnist default
+2023-01-10 15:41:53,860 | INFO | processed dnn5 mnist lincomb

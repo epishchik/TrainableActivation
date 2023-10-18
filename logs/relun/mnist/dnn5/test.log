@@ -1,0 +1,56 @@
+2023-01-10 12:30:15,447 | INFO | 
+model:
+  name: DNN5
+  architecture:
+    in_channels: 784
+    out_channels: 10
+    activation: ReLUN
+optimizer:
+  name: Adam
+  parameters:
+    lr: 0.0003
+    weight_decay: 1e-05
+scheduler:
+  num: 1
+  scheduler0:
+    name: ExponentialLR
+    parameters:
+      gamma: 0.5
+dataset:
+  name: MNIST
+  batch_size: 32
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+train:
+  epochs: 10
+  device: cuda:0
+  save_path: ./checkpoints/relun/mnist/
+  log_path: ./logs/relun/mnist/
+  seed: 42
+  save_every: 2
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/relun/mnist/
+  log_path: ./logs/relun/mnist/
+  seed: 42
+2023-01-10 12:30:15,447 | INFO | 
+DNN(
+  (first_fc): Linear(in_features=784, out_features=512, bias=True)
+  (first_act): ReLUN()
+  (layers): Sequential(
+    (0): Linear(in_features=512, out_features=256, bias=True)
+    (1): ReLUN()
+    (2): Linear(in_features=256, out_features=128, bias=True)
+    (3): ReLUN()
+    (4): Linear(in_features=128, out_features=64, bias=True)
+    (5): ReLUN()
+  )
+  (last_fc): Linear(in_features=64, out_features=10, bias=True)
+)
+2023-01-10 12:30:15,447 | INFO | 
+CrossEntropyLoss()
+2023-01-10 12:30:22,264 | INFO | cuda:0 ckpt: ./checkpoints/relun/mnist/dnn5/ep=10_lv=0.15.pth test_loss: 0.0936 test_accuracy: 0.971 test_precision: 0.979 test_recall: 0.971 test_f1: 0.971
+2023-01-10 12:30:29,006 | INFO | cuda:0 ckpt: ./checkpoints/relun/mnist/dnn5/ep=9_lv=0.14.pth test_loss: 0.0937 test_accuracy: 0.970 test_precision: 0.979 test_recall: 0.970 test_f1: 0.971
+2023-01-10 12:30:29,007 | INFO | total_time: 13.487 sec

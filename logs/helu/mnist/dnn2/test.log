@@ -1,0 +1,48 @@
+2023-01-10 11:20:25,220 | INFO | 
+model:
+  name: DNN2
+  architecture:
+    in_channels: 784
+    out_channels: 10
+    activation: HELU
+optimizer:
+  name: Adam
+  parameters:
+    lr: 0.0003
+    weight_decay: 1e-05
+scheduler:
+  num: 1
+  scheduler0:
+    name: ExponentialLR
+    parameters:
+      gamma: 0.5
+dataset:
+  name: MNIST
+  batch_size: 32
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+train:
+  epochs: 10
+  device: cuda:0
+  save_path: ./checkpoints/helu/mnist/
+  log_path: ./logs/helu/mnist/
+  seed: 42
+  save_every: 2
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/helu/mnist/
+  log_path: ./logs/helu/mnist/
+  seed: 42
+2023-01-10 11:20:25,220 | INFO | 
+DNN(
+  (first_fc): Linear(in_features=784, out_features=392, bias=True)
+  (first_act): HELU()
+  (last_fc): Linear(in_features=392, out_features=10, bias=True)
+)
+2023-01-10 11:20:25,220 | INFO | 
+CrossEntropyLoss()
+2023-01-10 11:20:31,868 | INFO | cuda:0 ckpt: ./checkpoints/helu/mnist/dnn2/ep=10_lv=0.24.pth test_loss: 0.1369 test_accuracy: 0.962 test_precision: 0.972 test_recall: 0.962 test_f1: 0.962
+2023-01-10 11:20:38,446 | INFO | cuda:0 ckpt: ./checkpoints/helu/mnist/dnn2/ep=9_lv=0.23.pth test_loss: 0.1370 test_accuracy: 0.962 test_precision: 0.972 test_recall: 0.962 test_f1: 0.962
+2023-01-10 11:20:38,446 | INFO | total_time: 13.153 sec

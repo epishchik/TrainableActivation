@@ -1,0 +1,7 @@
+models: [ResNet8, ResNet14, ResNet20, ResNet26, ResNet32, ResNet44, ResNet56]
+datasets: [CIFAR10]
+activations: [Default, ShiLU]
+log_path: ./logs/
+plot_path: ./plot/pairs/default_shilu/
+dpi: 70
+clip: [0.0, 3.0]

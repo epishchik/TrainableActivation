@@ -1,0 +1,268 @@
+2022-11-24 08:38:59,066 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'LinComb', 'ReLUN', 'ScaledSoftSign', 'ShiLU', 'HELU', 'DELU', 'SinLU', 'CosLU', 'NormLinComb']
+log_path: ./logs/
+plot_path: ./plot/full/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:38:59,289 | INFO | processed resnet8 cifar10 default
+2022-11-24 08:38:59,301 | INFO | processed resnet8 cifar10 lincomb
+2022-11-24 08:38:59,318 | INFO | processed resnet8 cifar10 relun
+2022-11-24 08:38:59,333 | INFO | processed resnet8 cifar10 scaledsoftsign
+2022-11-24 08:38:59,346 | INFO | processed resnet8 cifar10 shilu
+2022-11-24 08:38:59,358 | INFO | processed resnet8 cifar10 helu
+2022-11-24 08:38:59,377 | INFO | processed resnet8 cifar10 delu
+2022-11-24 08:38:59,394 | INFO | processed resnet8 cifar10 sinlu
+2022-11-24 08:38:59,411 | INFO | processed resnet8 cifar10 coslu
+2022-11-24 08:38:59,424 | INFO | processed resnet8 cifar10 normlincomb
+2022-11-24 08:38:59,966 | INFO | processed resnet14 cifar10 default
+2022-11-24 08:38:59,977 | INFO | processed resnet14 cifar10 lincomb
+2022-11-24 08:38:59,996 | INFO | processed resnet14 cifar10 relun
+2022-11-24 08:39:00,012 | INFO | processed resnet14 cifar10 scaledsoftsign
+2022-11-24 08:39:00,027 | INFO | processed resnet14 cifar10 shilu
+2022-11-24 08:39:00,040 | INFO | processed resnet14 cifar10 helu
+2022-11-24 08:39:00,060 | INFO | processed resnet14 cifar10 delu
+2022-11-24 08:39:00,089 | INFO | processed resnet14 cifar10 sinlu
+2022-11-24 08:39:00,110 | INFO | processed resnet14 cifar10 coslu
+2022-11-24 08:39:00,126 | INFO | processed resnet14 cifar10 normlincomb
+2022-11-24 08:39:00,602 | INFO | processed resnet20 cifar10 default
+2022-11-24 08:39:00,614 | INFO | processed resnet20 cifar10 lincomb
+2022-11-24 08:39:00,632 | INFO | processed resnet20 cifar10 relun
+2022-11-24 08:39:00,651 | INFO | processed resnet20 cifar10 scaledsoftsign
+2022-11-24 08:39:00,673 | INFO | processed resnet20 cifar10 shilu
+2022-11-24 08:39:00,685 | INFO | processed resnet20 cifar10 helu
+2022-11-24 08:39:00,698 | INFO | processed resnet20 cifar10 delu
+2022-11-24 08:39:00,709 | INFO | processed resnet20 cifar10 sinlu
+2022-11-24 08:39:00,725 | INFO | processed resnet20 cifar10 coslu
+2022-11-24 08:39:00,740 | INFO | processed resnet20 cifar10 normlincomb
+2022-11-24 08:39:01,391 | INFO | processed resnet26 cifar10 default
+2022-11-24 08:39:01,407 | INFO | processed resnet26 cifar10 lincomb
+2022-11-24 08:39:01,427 | INFO | processed resnet26 cifar10 relun
+2022-11-24 08:39:01,443 | INFO | processed resnet26 cifar10 scaledsoftsign
+2022-11-24 08:39:01,458 | INFO | processed resnet26 cifar10 shilu
+2022-11-24 08:39:01,491 | INFO | processed resnet26 cifar10 helu
+2022-11-24 08:39:01,507 | INFO | processed resnet26 cifar10 delu
+2022-11-24 08:39:01,525 | INFO | processed resnet26 cifar10 sinlu
+2022-11-24 08:39:01,550 | INFO | processed resnet26 cifar10 coslu
+2022-11-24 08:39:01,562 | INFO | processed resnet26 cifar10 normlincomb
+2022-11-24 08:39:02,240 | INFO | processed resnet32 cifar10 default
+2022-11-24 08:39:02,253 | INFO | processed resnet32 cifar10 lincomb
+2022-11-24 08:39:02,279 | INFO | processed resnet32 cifar10 relun
+2022-11-24 08:39:02,301 | INFO | processed resnet32 cifar10 scaledsoftsign
+2022-11-24 08:39:02,314 | INFO | processed resnet32 cifar10 shilu
+2022-11-24 08:39:02,331 | INFO | processed resnet32 cifar10 helu
+2022-11-24 08:39:02,348 | INFO | processed resnet32 cifar10 delu
+2022-11-24 08:39:02,364 | INFO | processed resnet32 cifar10 sinlu
+2022-11-24 08:39:02,384 | INFO | processed resnet32 cifar10 coslu
+2022-11-24 08:39:02,405 | INFO | processed resnet32 cifar10 normlincomb
+2022-11-24 08:39:02,997 | INFO | processed resnet44 cifar10 default
+2022-11-24 08:39:03,008 | INFO | processed resnet44 cifar10 lincomb
+2022-11-24 08:39:03,026 | INFO | processed resnet44 cifar10 relun
+2022-11-24 08:39:03,041 | INFO | processed resnet44 cifar10 scaledsoftsign
+2022-11-24 08:39:03,053 | INFO | processed resnet44 cifar10 shilu
+2022-11-24 08:39:03,067 | INFO | processed resnet44 cifar10 helu
+2022-11-24 08:39:03,081 | INFO | processed resnet44 cifar10 delu
+2022-11-24 08:39:03,096 | INFO | processed resnet44 cifar10 sinlu
+2022-11-24 08:39:03,111 | INFO | processed resnet44 cifar10 coslu
+2022-11-24 08:39:03,132 | INFO | processed resnet44 cifar10 normlincomb
+2022-11-24 08:39:03,646 | INFO | processed resnet56 cifar10 default
+2022-11-24 08:39:03,656 | INFO | processed resnet56 cifar10 lincomb
+2022-11-24 08:39:03,671 | INFO | processed resnet56 cifar10 relun
+2022-11-24 08:39:03,685 | INFO | processed resnet56 cifar10 scaledsoftsign
+2022-11-24 08:39:03,701 | INFO | processed resnet56 cifar10 shilu
+2022-11-24 08:39:03,719 | INFO | processed resnet56 cifar10 helu
+2022-11-24 08:39:03,735 | INFO | processed resnet56 cifar10 delu
+2022-11-24 08:39:03,750 | INFO | processed resnet56 cifar10 sinlu
+2022-11-24 08:39:03,763 | INFO | processed resnet56 cifar10 coslu
+2022-11-24 08:39:03,780 | INFO | processed resnet56 cifar10 normlincomb
+2023-01-05 20:36:51,743 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'LinComb', 'ReLUN', 'ScaledSoftSign', 'ShiLU', 'HELU', 'DELU', 'SinLU', 'CosLU', 'NormLinComb']
+log_path: ./logs/
+plot_path: ./plot/full/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:36:51,960 | INFO | processed resnet8 cifar10 default
+2023-01-05 20:36:51,973 | INFO | processed resnet8 cifar10 lincomb
+2023-01-05 20:36:51,987 | INFO | processed resnet8 cifar10 relun
+2023-01-05 20:36:52,003 | INFO | processed resnet8 cifar10 scaledsoftsign
+2023-01-05 20:36:52,017 | INFO | processed resnet8 cifar10 shilu
+2023-01-05 20:36:52,030 | INFO | processed resnet8 cifar10 helu
+2023-01-05 20:36:52,052 | INFO | processed resnet8 cifar10 delu
+2023-01-05 20:36:52,070 | INFO | processed resnet8 cifar10 sinlu
+2023-01-05 20:36:52,084 | INFO | processed resnet8 cifar10 coslu
+2023-01-05 20:36:52,103 | INFO | processed resnet8 cifar10 normlincomb
+2023-01-05 20:36:52,694 | INFO | processed resnet14 cifar10 default
+2023-01-05 20:36:52,706 | INFO | processed resnet14 cifar10 lincomb
+2023-01-05 20:36:52,723 | INFO | processed resnet14 cifar10 relun
+2023-01-05 20:36:52,742 | INFO | processed resnet14 cifar10 scaledsoftsign
+2023-01-05 20:36:52,758 | INFO | processed resnet14 cifar10 shilu
+2023-01-05 20:36:52,774 | INFO | processed resnet14 cifar10 helu
+2023-01-05 20:36:52,785 | INFO | processed resnet14 cifar10 delu
+2023-01-05 20:36:52,801 | INFO | processed resnet14 cifar10 sinlu
+2023-01-05 20:36:52,819 | INFO | processed resnet14 cifar10 coslu
+2023-01-05 20:36:52,833 | INFO | processed resnet14 cifar10 normlincomb
+2023-01-05 20:36:53,344 | INFO | processed resnet20 cifar10 default
+2023-01-05 20:36:53,355 | INFO | processed resnet20 cifar10 lincomb
+2023-01-05 20:36:53,369 | INFO | processed resnet20 cifar10 relun
+2023-01-05 20:36:53,390 | INFO | processed resnet20 cifar10 scaledsoftsign
+2023-01-05 20:36:53,409 | INFO | processed resnet20 cifar10 shilu
+2023-01-05 20:36:53,422 | INFO | processed resnet20 cifar10 helu
+2023-01-05 20:36:53,436 | INFO | processed resnet20 cifar10 delu
+2023-01-05 20:36:53,448 | INFO | processed resnet20 cifar10 sinlu
+2023-01-05 20:36:53,461 | INFO | processed resnet20 cifar10 coslu
+2023-01-05 20:36:53,505 | INFO | processed resnet20 cifar10 normlincomb
+2023-01-05 20:36:54,033 | INFO | processed resnet26 cifar10 default
+2023-01-05 20:36:54,047 | INFO | processed resnet26 cifar10 lincomb
+2023-01-05 20:36:54,063 | INFO | processed resnet26 cifar10 relun
+2023-01-05 20:36:54,077 | INFO | processed resnet26 cifar10 scaledsoftsign
+2023-01-05 20:36:54,092 | INFO | processed resnet26 cifar10 shilu
+2023-01-05 20:36:54,105 | INFO | processed resnet26 cifar10 helu
+2023-01-05 20:36:54,117 | INFO | processed resnet26 cifar10 delu
+2023-01-05 20:36:54,132 | INFO | processed resnet26 cifar10 sinlu
+2023-01-05 20:36:54,146 | INFO | processed resnet26 cifar10 coslu
+2023-01-05 20:36:54,160 | INFO | processed resnet26 cifar10 normlincomb
+2023-01-05 20:36:54,689 | INFO | processed resnet32 cifar10 default
+2023-01-05 20:36:54,702 | INFO | processed resnet32 cifar10 lincomb
+2023-01-05 20:36:54,719 | INFO | processed resnet32 cifar10 relun
+2023-01-05 20:36:54,734 | INFO | processed resnet32 cifar10 scaledsoftsign
+2023-01-05 20:36:54,749 | INFO | processed resnet32 cifar10 shilu
+2023-01-05 20:36:54,764 | INFO | processed resnet32 cifar10 helu
+2023-01-05 20:36:54,777 | INFO | processed resnet32 cifar10 delu
+2023-01-05 20:36:54,792 | INFO | processed resnet32 cifar10 sinlu
+2023-01-05 20:36:54,812 | INFO | processed resnet32 cifar10 coslu
+2023-01-05 20:36:54,832 | INFO | processed resnet32 cifar10 normlincomb
+2023-01-05 20:36:55,544 | INFO | processed resnet44 cifar10 default
+2023-01-05 20:36:55,557 | INFO | processed resnet44 cifar10 lincomb
+2023-01-05 20:36:55,570 | INFO | processed resnet44 cifar10 relun
+2023-01-05 20:36:55,585 | INFO | processed resnet44 cifar10 scaledsoftsign
+2023-01-05 20:36:55,599 | INFO | processed resnet44 cifar10 shilu
+2023-01-05 20:36:55,613 | INFO | processed resnet44 cifar10 helu
+2023-01-05 20:36:55,626 | INFO | processed resnet44 cifar10 delu
+2023-01-05 20:36:55,639 | INFO | processed resnet44 cifar10 sinlu
+2023-01-05 20:36:55,652 | INFO | processed resnet44 cifar10 coslu
+2023-01-05 20:36:55,663 | INFO | processed resnet44 cifar10 normlincomb
+2023-01-05 20:36:56,557 | INFO | processed resnet56 cifar10 default
+2023-01-05 20:36:56,567 | INFO | processed resnet56 cifar10 lincomb
+2023-01-05 20:36:56,579 | INFO | processed resnet56 cifar10 relun
+2023-01-05 20:36:56,598 | INFO | processed resnet56 cifar10 scaledsoftsign
+2023-01-05 20:36:56,610 | INFO | processed resnet56 cifar10 shilu
+2023-01-05 20:36:56,626 | INFO | processed resnet56 cifar10 helu
+2023-01-05 20:36:56,641 | INFO | processed resnet56 cifar10 delu
+2023-01-05 20:36:56,654 | INFO | processed resnet56 cifar10 sinlu
+2023-01-05 20:36:56,671 | INFO | processed resnet56 cifar10 coslu
+2023-01-05 20:36:56,684 | INFO | processed resnet56 cifar10 normlincomb
+2023-01-07 17:23:25,487 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'LinComb', 'ReLUN', 'ScaledSoftSign', 'ShiLU', 'HELU', 'DELU', 'SinLU', 'CosLU', 'NormLinComb']
+log_path: ./logs/
+plot_path: ./plot/full/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:23:25,686 | INFO | processed resnet8 cifar10 default
+2023-01-07 17:23:25,698 | INFO | processed resnet8 cifar10 lincomb
+2023-01-07 17:23:25,714 | INFO | processed resnet8 cifar10 relun
+2023-01-07 17:23:25,731 | INFO | processed resnet8 cifar10 scaledsoftsign
+2023-01-07 17:23:25,750 | INFO | processed resnet8 cifar10 shilu
+2023-01-07 17:23:25,764 | INFO | processed resnet8 cifar10 helu
+2023-01-07 17:23:25,775 | INFO | processed resnet8 cifar10 delu
+2023-01-07 17:23:25,791 | INFO | processed resnet8 cifar10 sinlu
+2023-01-07 17:23:25,804 | INFO | processed resnet8 cifar10 coslu
+2023-01-07 17:23:25,816 | INFO | processed resnet8 cifar10 normlincomb
+2023-01-07 17:23:26,483 | INFO | processed resnet14 cifar10 default
+2023-01-07 17:23:26,511 | INFO | processed resnet14 cifar10 lincomb
+2023-01-07 17:23:26,535 | INFO | processed resnet14 cifar10 relun
+2023-01-07 17:23:26,544 | INFO | processed resnet14 cifar10 scaledsoftsign
+2023-01-07 17:23:26,557 | INFO | processed resnet14 cifar10 shilu
+2023-01-07 17:23:26,570 | INFO | processed resnet14 cifar10 helu
+2023-01-07 17:23:26,585 | INFO | processed resnet14 cifar10 delu
+2023-01-07 17:23:26,599 | INFO | processed resnet14 cifar10 sinlu
+2023-01-07 17:23:26,622 | INFO | processed resnet14 cifar10 coslu
+2023-01-07 17:23:26,649 | INFO | processed resnet14 cifar10 normlincomb
+2023-01-07 17:23:27,190 | INFO | processed resnet20 cifar10 default
+2023-01-07 17:23:27,205 | INFO | processed resnet20 cifar10 lincomb
+2023-01-07 17:23:27,225 | INFO | processed resnet20 cifar10 relun
+2023-01-07 17:23:27,241 | INFO | processed resnet20 cifar10 scaledsoftsign
+2023-01-07 17:23:27,257 | INFO | processed resnet20 cifar10 shilu
+2023-01-07 17:23:27,273 | INFO | processed resnet20 cifar10 helu
+2023-01-07 17:23:27,287 | INFO | processed resnet20 cifar10 delu
+2023-01-07 17:23:27,302 | INFO | processed resnet20 cifar10 sinlu
+2023-01-07 17:23:27,315 | INFO | processed resnet20 cifar10 coslu
+2023-01-07 17:23:27,370 | INFO | processed resnet20 cifar10 normlincomb
+2023-01-07 17:23:27,894 | INFO | processed resnet26 cifar10 default
+2023-01-07 17:23:27,907 | INFO | processed resnet26 cifar10 lincomb
+2023-01-07 17:23:27,927 | INFO | processed resnet26 cifar10 relun
+2023-01-07 17:23:27,949 | INFO | processed resnet26 cifar10 scaledsoftsign
+2023-01-07 17:23:27,964 | INFO | processed resnet26 cifar10 shilu
+2023-01-07 17:23:27,980 | INFO | processed resnet26 cifar10 helu
+2023-01-07 17:23:28,001 | INFO | processed resnet26 cifar10 delu
+2023-01-07 17:23:28,018 | INFO | processed resnet26 cifar10 sinlu
+2023-01-07 17:23:28,034 | INFO | processed resnet26 cifar10 coslu
+2023-01-07 17:23:28,052 | INFO | processed resnet26 cifar10 normlincomb
+2023-01-07 17:23:28,635 | INFO | processed resnet32 cifar10 default
+2023-01-07 17:23:28,647 | INFO | processed resnet32 cifar10 lincomb
+2023-01-07 17:23:28,664 | INFO | processed resnet32 cifar10 relun
+2023-01-07 17:23:28,690 | INFO | processed resnet32 cifar10 scaledsoftsign
+2023-01-07 17:23:28,706 | INFO | processed resnet32 cifar10 shilu
+2023-01-07 17:23:28,718 | INFO | processed resnet32 cifar10 helu
+2023-01-07 17:23:28,730 | INFO | processed resnet32 cifar10 delu
+2023-01-07 17:23:28,749 | INFO | processed resnet32 cifar10 sinlu
+2023-01-07 17:23:28,764 | INFO | processed resnet32 cifar10 coslu
+2023-01-07 17:23:28,777 | INFO | processed resnet32 cifar10 normlincomb
+2023-01-07 17:23:29,308 | INFO | processed resnet44 cifar10 default
+2023-01-07 17:23:29,321 | INFO | processed resnet44 cifar10 lincomb
+2023-01-07 17:23:29,336 | INFO | processed resnet44 cifar10 relun
+2023-01-07 17:23:29,354 | INFO | processed resnet44 cifar10 scaledsoftsign
+2023-01-07 17:23:29,367 | INFO | processed resnet44 cifar10 shilu
+2023-01-07 17:23:29,384 | INFO | processed resnet44 cifar10 helu
+2023-01-07 17:23:29,403 | INFO | processed resnet44 cifar10 delu
+2023-01-07 17:23:29,413 | INFO | processed resnet44 cifar10 sinlu
+2023-01-07 17:23:29,428 | INFO | processed resnet44 cifar10 coslu
+2023-01-07 17:23:29,442 | INFO | processed resnet44 cifar10 normlincomb
+2023-01-07 17:23:30,285 | INFO | processed resnet56 cifar10 default
+2023-01-07 17:23:30,297 | INFO | processed resnet56 cifar10 lincomb
+2023-01-07 17:23:30,310 | INFO | processed resnet56 cifar10 relun
+2023-01-07 17:23:30,324 | INFO | processed resnet56 cifar10 scaledsoftsign
+2023-01-07 17:23:30,347 | INFO | processed resnet56 cifar10 shilu
+2023-01-07 17:23:30,368 | INFO | processed resnet56 cifar10 helu
+2023-01-07 17:23:30,383 | INFO | processed resnet56 cifar10 delu
+2023-01-07 17:23:30,404 | INFO | processed resnet56 cifar10 sinlu
+2023-01-07 17:23:30,423 | INFO | processed resnet56 cifar10 coslu
+2023-01-07 17:23:30,438 | INFO | processed resnet56 cifar10 normlincomb
+2023-01-10 15:41:28,235 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['Default', 'LinComb', 'ReLUN', 'ScaledSoftSign', 'ShiLU', 'HELU', 'DELU', 'SinLU', 'CosLU', 'NormLinComb']
+log_path: ./logs/
+plot_path: ./plot/full/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:28,393 | INFO | processed dnn2 mnist default
+2023-01-10 15:41:28,403 | INFO | processed dnn2 mnist lincomb
+2023-01-10 15:41:28,417 | INFO | processed dnn2 mnist relun
+2023-01-10 15:41:28,436 | INFO | processed dnn2 mnist scaledsoftsign
+2023-01-10 15:41:28,453 | INFO | processed dnn2 mnist shilu
+2023-01-10 15:41:28,466 | INFO | processed dnn2 mnist helu
+2023-01-10 15:41:28,479 | INFO | processed dnn2 mnist delu
+2023-01-10 15:41:28,489 | INFO | processed dnn2 mnist sinlu
+2023-01-10 15:41:28,501 | INFO | processed dnn2 mnist coslu
+2023-01-10 15:41:28,514 | INFO | processed dnn2 mnist normlincomb
+2023-01-10 15:41:29,087 | INFO | processed dnn3 mnist default
+2023-01-10 15:41:29,098 | INFO | processed dnn3 mnist lincomb
+2023-01-10 15:41:29,113 | INFO | processed dnn3 mnist relun
+2023-01-10 15:41:29,129 | INFO | processed dnn3 mnist scaledsoftsign
+2023-01-10 15:41:29,140 | INFO | processed dnn3 mnist shilu
+2023-01-10 15:41:29,154 | INFO | processed dnn3 mnist helu
+2023-01-10 15:41:29,165 | INFO | processed dnn3 mnist delu
+2023-01-10 15:41:29,176 | INFO | processed dnn3 mnist sinlu
+2023-01-10 15:41:29,188 | INFO | processed dnn3 mnist coslu
+2023-01-10 15:41:29,198 | INFO | processed dnn3 mnist normlincomb
+2023-01-10 15:41:29,635 | INFO | processed dnn5 mnist default
+2023-01-10 15:41:29,643 | INFO | processed dnn5 mnist lincomb
+2023-01-10 15:41:29,687 | INFO | processed dnn5 mnist relun
+2023-01-10 15:41:29,696 | INFO | processed dnn5 mnist scaledsoftsign
+2023-01-10 15:41:29,717 | INFO | processed dnn5 mnist shilu
+2023-01-10 15:41:29,729 | INFO | processed dnn5 mnist helu
+2023-01-10 15:41:29,742 | INFO | processed dnn5 mnist delu
+2023-01-10 15:41:29,754 | INFO | processed dnn5 mnist sinlu
+2023-01-10 15:41:29,765 | INFO | processed dnn5 mnist coslu
+2023-01-10 15:41:29,776 | INFO | processed dnn5 mnist normlincomb

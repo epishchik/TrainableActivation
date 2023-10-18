@@ -1,0 +1,52 @@
+2022-11-24 08:39:07,785 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['LinComb']
+log_path: ./logs/
+plot_path: ./plot/lincomb/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:07,861 | INFO | processed resnet8 cifar10 lincomb
+2022-11-24 08:39:08,180 | INFO | processed resnet14 cifar10 lincomb
+2022-11-24 08:39:08,479 | INFO | processed resnet20 cifar10 lincomb
+2022-11-24 08:39:08,738 | INFO | processed resnet26 cifar10 lincomb
+2022-11-24 08:39:09,020 | INFO | processed resnet32 cifar10 lincomb
+2022-11-24 08:39:09,314 | INFO | processed resnet44 cifar10 lincomb
+2022-11-24 08:39:09,578 | INFO | processed resnet56 cifar10 lincomb
+2023-01-05 20:37:02,431 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['LinComb']
+log_path: ./logs/
+plot_path: ./plot/lincomb/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:02,498 | INFO | processed resnet8 cifar10 lincomb
+2023-01-05 20:37:02,938 | INFO | processed resnet14 cifar10 lincomb
+2023-01-05 20:37:03,320 | INFO | processed resnet20 cifar10 lincomb
+2023-01-05 20:37:03,670 | INFO | processed resnet26 cifar10 lincomb
+2023-01-05 20:37:04,178 | INFO | processed resnet32 cifar10 lincomb
+2023-01-05 20:37:04,588 | INFO | processed resnet44 cifar10 lincomb
+2023-01-05 20:37:04,935 | INFO | processed resnet56 cifar10 lincomb
+2023-01-07 17:23:37,337 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['LinComb']
+log_path: ./logs/
+plot_path: ./plot/lincomb/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:23:37,424 | INFO | processed resnet8 cifar10 lincomb
+2023-01-07 17:23:38,056 | INFO | processed resnet14 cifar10 lincomb
+2023-01-07 17:23:38,424 | INFO | processed resnet20 cifar10 lincomb
+2023-01-07 17:23:38,804 | INFO | processed resnet26 cifar10 lincomb
+2023-01-07 17:23:39,115 | INFO | processed resnet32 cifar10 lincomb
+2023-01-07 17:23:39,645 | INFO | processed resnet44 cifar10 lincomb
+2023-01-07 17:23:40,136 | INFO | processed resnet56 cifar10 lincomb
+2023-01-10 15:41:33,342 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['LinComb']
+log_path: ./logs/
+plot_path: ./plot/lincomb/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:33,444 | INFO | processed dnn2 mnist lincomb
+2023-01-10 15:41:33,843 | INFO | processed dnn3 mnist lincomb
+2023-01-10 15:41:34,364 | INFO | processed dnn5 mnist lincomb

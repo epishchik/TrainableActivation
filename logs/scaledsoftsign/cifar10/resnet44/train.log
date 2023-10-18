@@ -1,0 +1,359 @@
+2022-11-20 17:47:58,700 | INFO | 
+model:
+  name: ResNet44
+  architecture:
+    in_channels: 3
+    out_channels: 10
+    activation: ScaledSoftSign
+optimizer:
+  name: SGD
+  parameters:
+    lr: 0.1
+    weight_decay: 0.0001
+    momentum: 0.9
+scheduler:
+  num: 2
+  scheduler0:
+    name: LinearLR
+    parameters:
+      start_factor: 0.1
+      end_factor: 1.0
+      total_iters: 10
+  scheduler1:
+    name: MultiStepLR
+    parameters:
+      milestones: [45, 65]
+      gamma: 0.1
+  milestones: [10]
+dataset:
+  name: CIFAR10
+  batch_size: 128
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+train:
+  epochs: 90
+  device: cuda:0
+  save_path: ./checkpoints/scaledsoftsign/cifar10/
+  log_path: ./logs/scaledsoftsign/cifar10/
+  seed: 42
+  save_every: 10
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/scaledsoftsign/cifar10/
+  log_path: ./logs/scaledsoftsign/cifar10/
+  seed: 42
+2022-11-20 17:47:58,701 | INFO | 
+ResNetCifar(
+  (conv1): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): BasicBlockCifar(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (1): BasicBlockCifar(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (2): BasicBlockCifar(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (3): BasicBlockCifar(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (4): BasicBlockCifar(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (5): BasicBlockCifar(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (6): BasicBlockCifar(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlockCifar(
+      (conv1): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): LambdaLayerCifar()
+      (relu): ScaledSoftSign()
+    )
+    (1): BasicBlockCifar(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (2): BasicBlockCifar(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (3): BasicBlockCifar(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (4): BasicBlockCifar(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (5): BasicBlockCifar(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (6): BasicBlockCifar(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlockCifar(
+      (conv1): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): LambdaLayerCifar()
+      (relu): ScaledSoftSign()
+    )
+    (1): BasicBlockCifar(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (2): BasicBlockCifar(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (3): BasicBlockCifar(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (4): BasicBlockCifar(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (5): BasicBlockCifar(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+    (6): BasicBlockCifar(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+      (relu): ScaledSoftSign()
+    )
+  )
+  (fc): Linear(in_features=64, out_features=10, bias=True)
+  (relu): ScaledSoftSign()
+)
+2022-11-20 17:47:58,702 | INFO | 
+SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.1
+    lr: 0.010000000000000002
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0001
+)
+2022-11-20 17:47:58,702 | INFO | 
+SequentialLR (
+  _milestones: [10]
+  last_epoch: 0
+  _schedulers: [
+    LinearLR (
+      start_factor: 0.1
+      end_factor: 1.0
+      total_iters: 10
+      base_lrs: [0.1]
+      last_epoch: 0
+      _step_count: 1
+      verbose: False
+      _get_lr_called_within_step: False
+      _last_lr: [0.010000000000000002]
+    ),
+    MultiStepLR (
+      milestones: Counter({45: 1, 65: 1})
+      gamma: 0.1
+      base_lrs: [0.1]
+      last_epoch: 0
+      _step_count: 1
+      verbose: False
+      _get_lr_called_within_step: False
+      _last_lr: [0.010000000000000002]
+    ),
+  ]
+)
+2022-11-20 17:47:58,702 | INFO | 
+CrossEntropyLoss()
+2022-11-20 17:48:47,126 | INFO | cuda:0 epoch: 1/90 train_loss: 2.0019 valid_loss: 2.0027 epoch_time: 46.389 sec
+2022-11-20 17:49:33,400 | INFO | cuda:0 epoch: 2/90 train_loss: 1.8009 valid_loss: 1.7681 epoch_time: 46.273 sec
+2022-11-20 17:50:19,805 | INFO | cuda:0 epoch: 3/90 train_loss: 1.6257 valid_loss: 1.6067 epoch_time: 46.405 sec
+2022-11-20 17:51:06,650 | INFO | cuda:0 epoch: 4/90 train_loss: 1.5095 valid_loss: 1.5979 epoch_time: 46.844 sec
+2022-11-20 17:51:53,069 | INFO | cuda:0 epoch: 5/90 train_loss: 1.4393 valid_loss: 1.4283 epoch_time: 46.419 sec
+2022-11-20 17:52:40,921 | INFO | cuda:0 epoch: 6/90 train_loss: 1.3425 valid_loss: 1.3809 epoch_time: 47.851 sec
+2022-11-20 17:53:27,292 | INFO | cuda:0 epoch: 7/90 train_loss: 1.2374 valid_loss: 1.2647 epoch_time: 46.370 sec
+2022-11-20 17:54:13,554 | INFO | cuda:0 epoch: 8/90 train_loss: 1.1874 valid_loss: 1.3457 epoch_time: 46.262 sec
+2022-11-20 17:54:59,820 | INFO | cuda:0 epoch: 9/90 train_loss: 1.1390 valid_loss: 1.1367 epoch_time: 46.266 sec
+2022-11-20 17:55:46,243 | INFO | cuda:0 epoch: 10/90 train_loss: 1.0812 valid_loss: 1.2891 epoch_time: 46.422 sec
+2022-11-20 17:56:32,629 | INFO | cuda:0 epoch: 11/90 train_loss: 1.0447 valid_loss: 1.0164 epoch_time: 46.386 sec
+2022-11-20 17:57:19,044 | INFO | cuda:0 epoch: 12/90 train_loss: 0.9867 valid_loss: 1.0456 epoch_time: 46.414 sec
+2022-11-20 17:58:05,320 | INFO | cuda:0 epoch: 13/90 train_loss: 0.9339 valid_loss: 0.9635 epoch_time: 46.276 sec
+2022-11-20 17:58:51,730 | INFO | cuda:0 epoch: 14/90 train_loss: 0.9102 valid_loss: 0.9670 epoch_time: 46.410 sec
+2022-11-20 17:59:37,952 | INFO | cuda:0 epoch: 15/90 train_loss: 0.8696 valid_loss: 0.9781 epoch_time: 46.221 sec
+2022-11-20 18:00:24,265 | INFO | cuda:0 epoch: 16/90 train_loss: 0.8443 valid_loss: 0.9028 epoch_time: 46.313 sec
+2022-11-20 18:01:10,766 | INFO | cuda:0 epoch: 17/90 train_loss: 0.8121 valid_loss: 0.8504 epoch_time: 46.500 sec
+2022-11-20 18:01:57,054 | INFO | cuda:0 epoch: 18/90 train_loss: 0.7902 valid_loss: 1.0639 epoch_time: 46.288 sec
+2022-11-20 18:02:43,276 | INFO | cuda:0 epoch: 19/90 train_loss: 0.7631 valid_loss: 0.8745 epoch_time: 46.222 sec
+2022-11-20 18:03:29,477 | INFO | cuda:0 epoch: 20/90 train_loss: 0.7532 valid_loss: 0.8978 epoch_time: 46.200 sec
+2022-11-20 18:04:15,714 | INFO | cuda:0 epoch: 21/90 train_loss: 0.7424 valid_loss: 1.0179 epoch_time: 46.237 sec
+2022-11-20 18:05:01,951 | INFO | cuda:0 epoch: 22/90 train_loss: 0.7122 valid_loss: 0.8897 epoch_time: 46.236 sec
+2022-11-20 18:05:48,331 | INFO | cuda:0 epoch: 23/90 train_loss: 0.7228 valid_loss: 0.7397 epoch_time: 46.380 sec
+2022-11-20 18:06:34,715 | INFO | cuda:0 epoch: 24/90 train_loss: 0.6966 valid_loss: 0.8454 epoch_time: 46.384 sec
+2022-11-20 18:07:21,017 | INFO | cuda:0 epoch: 25/90 train_loss: 0.6971 valid_loss: 0.8912 epoch_time: 46.301 sec
+2022-11-20 18:08:07,319 | INFO | cuda:0 epoch: 26/90 train_loss: 0.6678 valid_loss: 0.7762 epoch_time: 46.302 sec
+2022-11-20 18:08:53,762 | INFO | cuda:0 epoch: 27/90 train_loss: 0.6612 valid_loss: 0.9303 epoch_time: 46.442 sec
+2022-11-20 18:09:40,211 | INFO | cuda:0 epoch: 28/90 train_loss: 0.6497 valid_loss: 0.7654 epoch_time: 46.449 sec
+2022-11-20 18:10:26,438 | INFO | cuda:0 epoch: 29/90 train_loss: 0.6449 valid_loss: 0.8337 epoch_time: 46.227 sec
+2022-11-20 18:11:12,813 | INFO | cuda:0 epoch: 30/90 train_loss: 0.6467 valid_loss: 0.8485 epoch_time: 46.375 sec
+2022-11-20 18:11:59,157 | INFO | cuda:0 epoch: 31/90 train_loss: 0.6341 valid_loss: 0.7571 epoch_time: 46.343 sec
+2022-11-20 18:12:45,621 | INFO | cuda:0 epoch: 32/90 train_loss: 0.6195 valid_loss: 0.7339 epoch_time: 46.464 sec
+2022-11-20 18:13:32,121 | INFO | cuda:0 epoch: 33/90 train_loss: 0.6201 valid_loss: 0.8907 epoch_time: 46.499 sec
+2022-11-20 18:14:18,469 | INFO | cuda:0 epoch: 34/90 train_loss: 0.6138 valid_loss: 0.9355 epoch_time: 46.347 sec
+2022-11-20 18:15:04,885 | INFO | cuda:0 epoch: 35/90 train_loss: 0.6073 valid_loss: 0.8997 epoch_time: 46.415 sec
+2022-11-20 18:15:51,160 | INFO | cuda:0 epoch: 36/90 train_loss: 0.6067 valid_loss: 0.8432 epoch_time: 46.275 sec
+2022-11-20 18:16:37,494 | INFO | cuda:0 epoch: 37/90 train_loss: 0.5899 valid_loss: 0.7029 epoch_time: 46.333 sec
+2022-11-20 18:17:24,247 | INFO | cuda:0 epoch: 38/90 train_loss: 0.5833 valid_loss: 0.8187 epoch_time: 46.753 sec
+2022-11-20 18:18:10,400 | INFO | cuda:0 epoch: 39/90 train_loss: 0.5793 valid_loss: 0.9847 epoch_time: 46.152 sec
+2022-11-20 18:18:56,783 | INFO | cuda:0 epoch: 40/90 train_loss: 0.5715 valid_loss: 0.7188 epoch_time: 46.382 sec
+2022-11-20 18:19:43,301 | INFO | cuda:0 epoch: 41/90 train_loss: 0.5735 valid_loss: 0.6719 epoch_time: 46.518 sec
+2022-11-20 18:20:29,413 | INFO | cuda:0 epoch: 42/90 train_loss: 0.5690 valid_loss: 0.6834 epoch_time: 46.112 sec
+2022-11-20 18:21:15,801 | INFO | cuda:0 epoch: 43/90 train_loss: 0.5809 valid_loss: 0.7550 epoch_time: 46.387 sec
+2022-11-20 18:22:02,187 | INFO | cuda:0 epoch: 44/90 train_loss: 0.5527 valid_loss: 0.7132 epoch_time: 46.386 sec
+2022-11-20 18:22:48,477 | INFO | cuda:0 epoch: 45/90 train_loss: 0.5508 valid_loss: 0.8506 epoch_time: 46.289 sec
+2022-11-20 18:23:34,860 | INFO | cuda:0 epoch: 46/90 train_loss: 0.5461 valid_loss: 0.7519 epoch_time: 46.383 sec
+2022-11-20 18:24:21,186 | INFO | cuda:0 epoch: 47/90 train_loss: 0.5443 valid_loss: 0.8668 epoch_time: 46.326 sec
+2022-11-20 18:25:07,662 | INFO | cuda:0 epoch: 48/90 train_loss: 0.5364 valid_loss: 0.8873 epoch_time: 46.475 sec
+2022-11-20 18:25:53,860 | INFO | cuda:0 epoch: 49/90 train_loss: 0.5525 valid_loss: 0.8825 epoch_time: 46.198 sec
+2022-11-20 18:26:40,365 | INFO | cuda:0 epoch: 50/90 train_loss: 0.5334 valid_loss: 0.7477 epoch_time: 46.504 sec
+2022-11-20 18:27:26,562 | INFO | cuda:0 epoch: 51/90 train_loss: 0.5295 valid_loss: 0.7044 epoch_time: 46.197 sec
+2022-11-20 18:28:12,901 | INFO | cuda:0 epoch: 52/90 train_loss: 0.5256 valid_loss: 0.7419 epoch_time: 46.338 sec
+2022-11-20 18:28:59,003 | INFO | cuda:0 epoch: 53/90 train_loss: 0.5278 valid_loss: 0.6575 epoch_time: 46.102 sec
+2022-11-20 18:29:45,158 | INFO | cuda:0 epoch: 54/90 train_loss: 0.5104 valid_loss: 0.7704 epoch_time: 46.154 sec
+2022-11-20 18:30:31,496 | INFO | cuda:0 epoch: 55/90 train_loss: 0.5141 valid_loss: 0.7007 epoch_time: 46.339 sec
+2022-11-20 18:31:18,147 | INFO | cuda:0 epoch: 56/90 train_loss: 0.3998 valid_loss: 0.4793 epoch_time: 46.650 sec
+2022-11-20 18:32:04,602 | INFO | cuda:0 epoch: 57/90 train_loss: 0.3546 valid_loss: 0.4665 epoch_time: 46.455 sec
+2022-11-20 18:32:51,076 | INFO | cuda:0 epoch: 58/90 train_loss: 0.3395 valid_loss: 0.4651 epoch_time: 46.473 sec
+2022-11-20 18:33:37,468 | INFO | cuda:0 epoch: 59/90 train_loss: 0.3279 valid_loss: 0.4569 epoch_time: 46.392 sec
+2022-11-20 18:34:23,764 | INFO | cuda:0 epoch: 60/90 train_loss: 0.3185 valid_loss: 0.4847 epoch_time: 46.295 sec
+2022-11-20 18:35:10,224 | INFO | cuda:0 epoch: 61/90 train_loss: 0.3098 valid_loss: 0.4568 epoch_time: 46.459 sec
+2022-11-20 18:35:56,493 | INFO | cuda:0 epoch: 62/90 train_loss: 0.3027 valid_loss: 0.4479 epoch_time: 46.269 sec
+2022-11-20 18:36:42,902 | INFO | cuda:0 epoch: 63/90 train_loss: 0.2983 valid_loss: 0.4651 epoch_time: 46.409 sec
+2022-11-20 18:37:29,235 | INFO | cuda:0 epoch: 64/90 train_loss: 0.2882 valid_loss: 0.4676 epoch_time: 46.332 sec
+2022-11-20 18:38:15,345 | INFO | cuda:0 epoch: 65/90 train_loss: 0.2836 valid_loss: 0.4526 epoch_time: 46.110 sec
+2022-11-20 18:39:01,457 | INFO | cuda:0 epoch: 66/90 train_loss: 0.2752 valid_loss: 0.4636 epoch_time: 46.111 sec
+2022-11-20 18:39:47,777 | INFO | cuda:0 epoch: 67/90 train_loss: 0.2724 valid_loss: 0.4530 epoch_time: 46.319 sec
+2022-11-20 18:40:34,112 | INFO | cuda:0 epoch: 68/90 train_loss: 0.2701 valid_loss: 0.4720 epoch_time: 46.335 sec
+2022-11-20 18:41:20,171 | INFO | cuda:0 epoch: 69/90 train_loss: 0.2627 valid_loss: 0.4709 epoch_time: 46.059 sec
+2022-11-20 18:42:06,650 | INFO | cuda:0 epoch: 70/90 train_loss: 0.2600 valid_loss: 0.4818 epoch_time: 46.478 sec
+2022-11-20 18:42:52,947 | INFO | cuda:0 epoch: 71/90 train_loss: 0.2556 valid_loss: 0.4630 epoch_time: 46.296 sec
+2022-11-20 18:43:39,354 | INFO | cuda:0 epoch: 72/90 train_loss: 0.2567 valid_loss: 0.4724 epoch_time: 46.407 sec
+2022-11-20 18:44:25,578 | INFO | cuda:0 epoch: 73/90 train_loss: 0.2495 valid_loss: 0.4652 epoch_time: 46.223 sec
+2022-11-20 18:45:11,751 | INFO | cuda:0 epoch: 74/90 train_loss: 0.2423 valid_loss: 0.4793 epoch_time: 46.173 sec
+2022-11-20 18:45:58,152 | INFO | cuda:0 epoch: 75/90 train_loss: 0.2409 valid_loss: 0.4720 epoch_time: 46.400 sec
+2022-11-20 18:46:44,452 | INFO | cuda:0 epoch: 76/90 train_loss: 0.2230 valid_loss: 0.4608 epoch_time: 46.300 sec
+2022-11-20 18:47:30,719 | INFO | cuda:0 epoch: 77/90 train_loss: 0.2158 valid_loss: 0.4714 epoch_time: 46.266 sec
+2022-11-20 18:48:17,122 | INFO | cuda:0 epoch: 78/90 train_loss: 0.2146 valid_loss: 0.4443 epoch_time: 46.403 sec
+2022-11-20 18:49:03,493 | INFO | cuda:0 epoch: 79/90 train_loss: 0.2079 valid_loss: 0.4472 epoch_time: 46.371 sec
+2022-11-20 18:49:49,815 | INFO | cuda:0 epoch: 80/90 train_loss: 0.2086 valid_loss: 0.4549 epoch_time: 46.322 sec
+2022-11-20 18:50:36,129 | INFO | cuda:0 epoch: 81/90 train_loss: 0.2087 valid_loss: 0.4554 epoch_time: 46.314 sec
+2022-11-20 18:51:22,440 | INFO | cuda:0 epoch: 82/90 train_loss: 0.2066 valid_loss: 0.4536 epoch_time: 46.311 sec
+2022-11-20 18:52:08,834 | INFO | cuda:0 epoch: 83/90 train_loss: 0.2076 valid_loss: 0.4270 epoch_time: 46.394 sec
+2022-11-20 18:52:55,096 | INFO | cuda:0 epoch: 84/90 train_loss: 0.2042 valid_loss: 0.4567 epoch_time: 46.261 sec
+2022-11-20 18:53:41,236 | INFO | cuda:0 epoch: 85/90 train_loss: 0.2053 valid_loss: 0.4737 epoch_time: 46.140 sec
+2022-11-20 18:54:27,613 | INFO | cuda:0 epoch: 86/90 train_loss: 0.2025 valid_loss: 0.4661 epoch_time: 46.376 sec
+2022-11-20 18:55:13,798 | INFO | cuda:0 epoch: 87/90 train_loss: 0.2024 valid_loss: 0.4632 epoch_time: 46.185 sec
+2022-11-20 18:55:59,896 | INFO | cuda:0 epoch: 88/90 train_loss: 0.2055 valid_loss: 0.4636 epoch_time: 46.098 sec
+2022-11-20 18:56:45,941 | INFO | cuda:0 epoch: 89/90 train_loss: 0.2033 valid_loss: 0.4516 epoch_time: 46.045 sec
+2022-11-20 18:57:32,351 | INFO | cuda:0 epoch: 90/90 train_loss: 0.2016 valid_loss: 0.4462 epoch_time: 46.410 sec
+2022-11-20 18:58:01,587 | INFO | 
+train_accuracy: 0.938 train_precision: 0.943 train_recall: 0.938 train_f1: 0.938 valid_accuracy: 0.860 valid_precision: 0.869 valid_recall: 0.860 valid_f1: 0.860 total_time: 4171.614 sec

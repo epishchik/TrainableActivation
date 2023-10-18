@@ -1,0 +1,52 @@
+model:
+  name: ResNet14
+  architecture:
+    in_channels: 3
+    out_channels: 10
+    activation:
+      name: LinComb
+      activations: [relu, sigmoid, tanh, softsign]
+
+optimizer:
+  name: SGD
+  parameters:
+    lr: 0.1
+    weight_decay: 0.0001
+    momentum: 0.9
+
+scheduler:
+  num: 2
+  scheduler0:
+    name: LinearLR
+    parameters:
+      start_factor: 0.1
+      end_factor: 1.0
+      total_iters: 5
+  scheduler1:
+    name: MultiStepLR
+    parameters:
+      milestones: [45, 65]
+      gamma: 0.1
+  milestones: [5]
+
+dataset:
+  name: CIFAR10
+  batch_size: 128
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+
+train:
+  epochs: 90
+  device: cuda:0
+  save_path: ./checkpoints/lincomb/cifar10/
+  log_path: ./logs/lincomb/cifar10/
+  seed: 42
+  save_every: 10
+
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/lincomb/cifar10/
+  log_path: ./logs/lincomb/cifar10/
+  seed: 42

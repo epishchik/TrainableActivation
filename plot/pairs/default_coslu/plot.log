@@ -1,0 +1,76 @@
+2022-11-24 08:39:54,108 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'CosLU']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_coslu/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:54,188 | INFO | processed resnet8 cifar10 default
+2022-11-24 08:39:54,199 | INFO | processed resnet8 cifar10 coslu
+2022-11-24 08:39:54,526 | INFO | processed resnet14 cifar10 default
+2022-11-24 08:39:54,537 | INFO | processed resnet14 cifar10 coslu
+2022-11-24 08:39:54,864 | INFO | processed resnet20 cifar10 default
+2022-11-24 08:39:54,874 | INFO | processed resnet20 cifar10 coslu
+2022-11-24 08:39:55,151 | INFO | processed resnet26 cifar10 default
+2022-11-24 08:39:55,168 | INFO | processed resnet26 cifar10 coslu
+2022-11-24 08:39:55,467 | INFO | processed resnet32 cifar10 default
+2022-11-24 08:39:55,482 | INFO | processed resnet32 cifar10 coslu
+2022-11-24 08:39:55,821 | INFO | processed resnet44 cifar10 default
+2022-11-24 08:39:55,835 | INFO | processed resnet44 cifar10 coslu
+2022-11-24 08:39:56,139 | INFO | processed resnet56 cifar10 default
+2022-11-24 08:39:56,152 | INFO | processed resnet56 cifar10 coslu
+2023-01-05 20:37:58,916 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'CosLU']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_coslu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:58,987 | INFO | processed resnet8 cifar10 default
+2023-01-05 20:37:58,997 | INFO | processed resnet8 cifar10 coslu
+2023-01-05 20:37:59,367 | INFO | processed resnet14 cifar10 default
+2023-01-05 20:37:59,375 | INFO | processed resnet14 cifar10 coslu
+2023-01-05 20:37:59,658 | INFO | processed resnet20 cifar10 default
+2023-01-05 20:37:59,667 | INFO | processed resnet20 cifar10 coslu
+2023-01-05 20:37:59,991 | INFO | processed resnet26 cifar10 default
+2023-01-05 20:38:00,009 | INFO | processed resnet26 cifar10 coslu
+2023-01-05 20:38:00,370 | INFO | processed resnet32 cifar10 default
+2023-01-05 20:38:00,381 | INFO | processed resnet32 cifar10 coslu
+2023-01-05 20:38:00,663 | INFO | processed resnet44 cifar10 default
+2023-01-05 20:38:00,674 | INFO | processed resnet44 cifar10 coslu
+2023-01-05 20:38:00,974 | INFO | processed resnet56 cifar10 default
+2023-01-05 20:38:00,983 | INFO | processed resnet56 cifar10 coslu
+2023-01-07 17:24:52,454 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'CosLU']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_coslu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:24:52,532 | INFO | processed resnet8 cifar10 default
+2023-01-07 17:24:52,546 | INFO | processed resnet8 cifar10 coslu
+2023-01-07 17:24:53,135 | INFO | processed resnet14 cifar10 default
+2023-01-07 17:24:53,160 | INFO | processed resnet14 cifar10 coslu
+2023-01-07 17:24:53,719 | INFO | processed resnet20 cifar10 default
+2023-01-07 17:24:53,734 | INFO | processed resnet20 cifar10 coslu
+2023-01-07 17:24:54,143 | INFO | processed resnet26 cifar10 default
+2023-01-07 17:24:54,158 | INFO | processed resnet26 cifar10 coslu
+2023-01-07 17:24:54,682 | INFO | processed resnet32 cifar10 default
+2023-01-07 17:24:54,700 | INFO | processed resnet32 cifar10 coslu
+2023-01-07 17:24:55,105 | INFO | processed resnet44 cifar10 default
+2023-01-07 17:24:55,119 | INFO | processed resnet44 cifar10 coslu
+2023-01-07 17:24:55,474 | INFO | processed resnet56 cifar10 default
+2023-01-07 17:24:55,489 | INFO | processed resnet56 cifar10 coslu
+2023-01-10 15:42:08,491 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['Default', 'CosLU']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_coslu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:42:08,572 | INFO | processed dnn2 mnist default
+2023-01-10 15:42:08,581 | INFO | processed dnn2 mnist coslu
+2023-01-10 15:42:09,025 | INFO | processed dnn3 mnist default
+2023-01-10 15:42:09,037 | INFO | processed dnn3 mnist coslu
+2023-01-10 15:42:09,445 | INFO | processed dnn5 mnist default
+2023-01-10 15:42:09,454 | INFO | processed dnn5 mnist coslu

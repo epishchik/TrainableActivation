@@ -1,0 +1,19 @@
+models: [ResNet8, ResNet14, ResNet20, ResNet26, ResNet32, ResNet44, ResNet56]
+datasets: [CIFAR10]
+activations:
+  [
+    Default,
+    LinComb,
+    ReLUN,
+    ScaledSoftSign,
+    ShiLU,
+    HELU,
+    DELU,
+    SinLU,
+    CosLU,
+    NormLinComb,
+  ]
+log_path: ./logs/
+plot_path: ./plot/full/
+dpi: 70
+clip: [0.0, 3.0]

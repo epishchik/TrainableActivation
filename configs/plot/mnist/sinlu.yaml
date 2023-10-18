@@ -1,0 +1,7 @@
+models: [DNN2, DNN3, DNN5]
+datasets: [MNIST]
+activations: [SinLU]
+log_path: ./logs/
+plot_path: ./plot/sinlu/
+dpi: 70
+clip: [0.0, 3.0]

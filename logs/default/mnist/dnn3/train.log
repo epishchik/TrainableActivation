@@ -1,0 +1,81 @@
+2023-01-10 10:33:04,032 | INFO | 
+model:
+  name: DNN3
+  architecture:
+    in_channels: 784
+    out_channels: 10
+    activation: Default
+optimizer:
+  name: Adam
+  parameters:
+    lr: 0.0003
+    weight_decay: 1e-05
+scheduler:
+  num: 1
+  scheduler0:
+    name: ExponentialLR
+    parameters:
+      gamma: 0.5
+dataset:
+  name: MNIST
+  batch_size: 32
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+train:
+  epochs: 10
+  device: cuda:0
+  save_path: ./checkpoints/default/mnist/
+  log_path: ./logs/default/mnist/
+  seed: 42
+  save_every: 2
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/default/mnist/
+  log_path: ./logs/default/mnist/
+  seed: 42
+2023-01-10 10:33:04,033 | INFO | 
+DNN(
+  (first_fc): Linear(in_features=784, out_features=392, bias=True)
+  (first_act): ReLU()
+  (layers): Sequential(
+    (0): Linear(in_features=392, out_features=196, bias=True)
+    (1): ReLU()
+  )
+  (last_fc): Linear(in_features=196, out_features=10, bias=True)
+)
+2023-01-10 10:33:04,033 | INFO | 
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.0003
+    lr: 0.0003
+    weight_decay: 1e-05
+)
+2023-01-10 10:33:04,033 | INFO | 
+ExponentialLR (
+  gamma: 0.5
+  base_lrs: [0.0003]
+  last_epoch: 0
+  _step_count: 1
+  verbose: False
+  _get_lr_called_within_step: False
+  _last_lr: [0.0003]
+)
+2023-01-10 10:33:04,033 | INFO | 
+CrossEntropyLoss()
+2023-01-10 10:33:28,427 | INFO | cuda:0 epoch: 1/10 train_loss: 0.5810 valid_loss: 0.3170 epoch_time: 24.320 sec
+2023-01-10 10:33:52,444 | INFO | cuda:0 epoch: 2/10 train_loss: 0.2575 valid_loss: 0.2349 epoch_time: 24.016 sec
+2023-01-10 10:34:16,309 | INFO | cuda:0 epoch: 3/10 train_loss: 0.2053 valid_loss: 0.2100 epoch_time: 23.864 sec
+2023-01-10 10:34:40,463 | INFO | cuda:0 epoch: 4/10 train_loss: 0.1858 valid_loss: 0.1929 epoch_time: 24.154 sec
+2023-01-10 10:35:04,729 | INFO | cuda:0 epoch: 5/10 train_loss: 0.1726 valid_loss: 0.1747 epoch_time: 24.266 sec
+2023-01-10 10:35:29,010 | INFO | cuda:0 epoch: 6/10 train_loss: 0.1700 valid_loss: 0.1762 epoch_time: 24.281 sec
+2023-01-10 10:35:53,330 | INFO | cuda:0 epoch: 7/10 train_loss: 0.1651 valid_loss: 0.1855 epoch_time: 24.320 sec
+2023-01-10 10:36:17,630 | INFO | cuda:0 epoch: 8/10 train_loss: 0.1649 valid_loss: 0.1761 epoch_time: 24.300 sec
+2023-01-10 10:36:42,232 | INFO | cuda:0 epoch: 9/10 train_loss: 0.1661 valid_loss: 0.1794 epoch_time: 24.601 sec
+2023-01-10 10:37:06,739 | INFO | cuda:0 epoch: 10/10 train_loss: 0.1642 valid_loss: 0.1799 epoch_time: 24.506 sec
+2023-01-10 10:37:34,890 | INFO | 
+train_accuracy: 0.951 train_precision: 0.963 train_recall: 0.951 train_f1: 0.950 valid_accuracy: 0.948 valid_precision: 0.960 valid_recall: 0.948 valid_f1: 0.948 total_time: 242.632 sec

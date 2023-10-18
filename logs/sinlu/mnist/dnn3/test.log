@@ -1,0 +1,52 @@
+2023-01-10 11:25:24,662 | INFO | 
+model:
+  name: DNN3
+  architecture:
+    in_channels: 784
+    out_channels: 10
+    activation: SinLU
+optimizer:
+  name: Adam
+  parameters:
+    lr: 0.0003
+    weight_decay: 1e-05
+scheduler:
+  num: 1
+  scheduler0:
+    name: ExponentialLR
+    parameters:
+      gamma: 0.5
+dataset:
+  name: MNIST
+  batch_size: 32
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+train:
+  epochs: 10
+  device: cuda:0
+  save_path: ./checkpoints/sinlu/mnist/
+  log_path: ./logs/sinlu/mnist/
+  seed: 42
+  save_every: 2
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/sinlu/mnist/
+  log_path: ./logs/sinlu/mnist/
+  seed: 42
+2023-01-10 11:25:24,663 | INFO | 
+DNN(
+  (first_fc): Linear(in_features=784, out_features=392, bias=True)
+  (first_act): SinLU()
+  (layers): Sequential(
+    (0): Linear(in_features=392, out_features=196, bias=True)
+    (1): SinLU()
+  )
+  (last_fc): Linear(in_features=196, out_features=10, bias=True)
+)
+2023-01-10 11:25:24,663 | INFO | 
+CrossEntropyLoss()
+2023-01-10 11:25:31,201 | INFO | cuda:0 ckpt: ./checkpoints/sinlu/mnist/dnn3/ep=10_lv=0.15.pth test_loss: 0.0861 test_accuracy: 0.972 test_precision: 0.979 test_recall: 0.972 test_f1: 0.972
+2023-01-10 11:25:37,654 | INFO | cuda:0 ckpt: ./checkpoints/sinlu/mnist/dnn3/ep=8_lv=0.14.pth test_loss: 0.0865 test_accuracy: 0.972 test_precision: 0.979 test_recall: 0.972 test_f1: 0.972
+2023-01-10 11:25:37,654 | INFO | total_time: 12.918 sec

@@ -1,0 +1,52 @@
+2022-11-24 08:39:10,697 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['ShiLU']
+log_path: ./logs/
+plot_path: ./plot/shilu/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:10,769 | INFO | processed resnet8 cifar10 shilu
+2022-11-24 08:39:11,043 | INFO | processed resnet14 cifar10 shilu
+2022-11-24 08:39:11,308 | INFO | processed resnet20 cifar10 shilu
+2022-11-24 08:39:11,590 | INFO | processed resnet26 cifar10 shilu
+2022-11-24 08:39:11,881 | INFO | processed resnet32 cifar10 shilu
+2022-11-24 08:39:12,152 | INFO | processed resnet44 cifar10 shilu
+2022-11-24 08:39:12,402 | INFO | processed resnet56 cifar10 shilu
+2023-01-05 20:37:07,014 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['ShiLU']
+log_path: ./logs/
+plot_path: ./plot/shilu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:07,087 | INFO | processed resnet8 cifar10 shilu
+2023-01-05 20:37:07,537 | INFO | processed resnet14 cifar10 shilu
+2023-01-05 20:37:08,011 | INFO | processed resnet20 cifar10 shilu
+2023-01-05 20:37:08,472 | INFO | processed resnet26 cifar10 shilu
+2023-01-05 20:37:09,094 | INFO | processed resnet32 cifar10 shilu
+2023-01-05 20:37:09,513 | INFO | processed resnet44 cifar10 shilu
+2023-01-05 20:37:09,914 | INFO | processed resnet56 cifar10 shilu
+2023-01-07 17:23:42,584 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['ShiLU']
+log_path: ./logs/
+plot_path: ./plot/shilu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:23:42,652 | INFO | processed resnet8 cifar10 shilu
+2023-01-07 17:23:43,402 | INFO | processed resnet14 cifar10 shilu
+2023-01-07 17:23:44,206 | INFO | processed resnet20 cifar10 shilu
+2023-01-07 17:23:44,804 | INFO | processed resnet26 cifar10 shilu
+2023-01-07 17:23:45,456 | INFO | processed resnet32 cifar10 shilu
+2023-01-07 17:23:46,156 | INFO | processed resnet44 cifar10 shilu
+2023-01-07 17:23:46,751 | INFO | processed resnet56 cifar10 shilu
+2023-01-10 15:41:35,877 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['ShiLU']
+log_path: ./logs/
+plot_path: ./plot/shilu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:35,949 | INFO | processed dnn2 mnist shilu
+2023-01-10 15:41:36,348 | INFO | processed dnn3 mnist shilu
+2023-01-10 15:41:36,752 | INFO | processed dnn5 mnist shilu

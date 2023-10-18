@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Trainable Activations for Image Classification"
+authors:
+- family-names: "Pishchik"
+  given-names: "Evgenii"
+  orcid: "https://orcid.org/0000-0001-6614-4419"
+date-released: 2023-01-26
+url: "https://github.com/Pe4enIks/TrainableActivation"
+preferred-citation:
+  type: article
+  title: "Trainable Activations for Image Classification"
+  authors:
+  - family-names: "Pishchik"
+    given-names: "Evgenii"
+    orcid: "https://orcid.org/0000-0001-6614-4419"
+  doi: "10.20944/preprints202301.0463.v1"
+  month: 1
+  year: 2023

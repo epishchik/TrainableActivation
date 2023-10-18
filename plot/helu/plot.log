@@ -1,0 +1,52 @@
+2022-11-24 08:39:19,010 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['HELU']
+log_path: ./logs/
+plot_path: ./plot/helu/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:19,074 | INFO | processed resnet8 cifar10 helu
+2022-11-24 08:39:19,338 | INFO | processed resnet14 cifar10 helu
+2022-11-24 08:39:19,613 | INFO | processed resnet20 cifar10 helu
+2022-11-24 08:39:19,871 | INFO | processed resnet26 cifar10 helu
+2022-11-24 08:39:20,132 | INFO | processed resnet32 cifar10 helu
+2022-11-24 08:39:20,411 | INFO | processed resnet44 cifar10 helu
+2022-11-24 08:39:20,714 | INFO | processed resnet56 cifar10 helu
+2023-01-05 20:37:20,479 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['HELU']
+log_path: ./logs/
+plot_path: ./plot/helu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:20,549 | INFO | processed resnet8 cifar10 helu
+2023-01-05 20:37:21,252 | INFO | processed resnet14 cifar10 helu
+2023-01-05 20:37:22,154 | INFO | processed resnet20 cifar10 helu
+2023-01-05 20:37:22,588 | INFO | processed resnet26 cifar10 helu
+2023-01-05 20:37:23,038 | INFO | processed resnet32 cifar10 helu
+2023-01-05 20:37:23,477 | INFO | processed resnet44 cifar10 helu
+2023-01-05 20:37:24,037 | INFO | processed resnet56 cifar10 helu
+2023-01-07 17:23:55,929 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['HELU']
+log_path: ./logs/
+plot_path: ./plot/helu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:23:56,000 | INFO | processed resnet8 cifar10 helu
+2023-01-07 17:23:56,467 | INFO | processed resnet14 cifar10 helu
+2023-01-07 17:23:56,815 | INFO | processed resnet20 cifar10 helu
+2023-01-07 17:23:57,161 | INFO | processed resnet26 cifar10 helu
+2023-01-07 17:23:57,474 | INFO | processed resnet32 cifar10 helu
+2023-01-07 17:23:57,790 | INFO | processed resnet44 cifar10 helu
+2023-01-07 17:23:58,105 | INFO | processed resnet56 cifar10 helu
+2023-01-10 15:41:42,823 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['HELU']
+log_path: ./logs/
+plot_path: ./plot/helu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:42,882 | INFO | processed dnn2 mnist helu
+2023-01-10 15:41:43,318 | INFO | processed dnn3 mnist helu
+2023-01-10 15:41:44,469 | INFO | processed dnn5 mnist helu

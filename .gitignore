@@ -1,0 +1,13 @@
+.vscode/
+.idea/
+**__pycache__**
+test_checkpoints/
+test_logs/
+test_plot/
+data/
+test_config.yaml
+test_plot.yaml
+paper/
+clear*.sh
+done.txt
+model/rnn.py

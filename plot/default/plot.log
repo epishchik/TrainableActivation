@@ -1,0 +1,52 @@
+2022-11-24 08:39:05,046 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default']
+log_path: ./logs/
+plot_path: ./plot/default/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:05,110 | INFO | processed resnet8 cifar10 default
+2022-11-24 08:39:05,395 | INFO | processed resnet14 cifar10 default
+2022-11-24 08:39:05,681 | INFO | processed resnet20 cifar10 default
+2022-11-24 08:39:05,936 | INFO | processed resnet26 cifar10 default
+2022-11-24 08:39:06,207 | INFO | processed resnet32 cifar10 default
+2022-11-24 08:39:06,498 | INFO | processed resnet44 cifar10 default
+2022-11-24 08:39:06,746 | INFO | processed resnet56 cifar10 default
+2023-01-05 20:36:58,521 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default']
+log_path: ./logs/
+plot_path: ./plot/default/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:36:58,636 | INFO | processed resnet8 cifar10 default
+2023-01-05 20:36:59,103 | INFO | processed resnet14 cifar10 default
+2023-01-05 20:36:59,618 | INFO | processed resnet20 cifar10 default
+2023-01-05 20:37:00,024 | INFO | processed resnet26 cifar10 default
+2023-01-05 20:37:00,381 | INFO | processed resnet32 cifar10 default
+2023-01-05 20:37:00,904 | INFO | processed resnet44 cifar10 default
+2023-01-05 20:37:01,272 | INFO | processed resnet56 cifar10 default
+2023-01-07 17:23:32,226 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default']
+log_path: ./logs/
+plot_path: ./plot/default/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:23:32,289 | INFO | processed resnet8 cifar10 default
+2023-01-07 17:23:32,809 | INFO | processed resnet14 cifar10 default
+2023-01-07 17:23:33,126 | INFO | processed resnet20 cifar10 default
+2023-01-07 17:23:33,513 | INFO | processed resnet26 cifar10 default
+2023-01-07 17:23:33,871 | INFO | processed resnet32 cifar10 default
+2023-01-07 17:23:34,665 | INFO | processed resnet44 cifar10 default
+2023-01-07 17:23:35,604 | INFO | processed resnet56 cifar10 default
+2023-01-10 15:41:31,205 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['Default']
+log_path: ./logs/
+plot_path: ./plot/default/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:31,282 | INFO | processed dnn2 mnist default
+2023-01-10 15:41:31,694 | INFO | processed dnn3 mnist default
+2023-01-10 15:41:32,002 | INFO | processed dnn5 mnist default

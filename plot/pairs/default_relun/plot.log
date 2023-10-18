@@ -1,0 +1,76 @@
+2022-11-24 08:39:41,957 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'ReLUN']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_relun/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:42,039 | INFO | processed resnet8 cifar10 default
+2022-11-24 08:39:42,050 | INFO | processed resnet8 cifar10 relun
+2022-11-24 08:39:42,351 | INFO | processed resnet14 cifar10 default
+2022-11-24 08:39:42,364 | INFO | processed resnet14 cifar10 relun
+2022-11-24 08:39:42,647 | INFO | processed resnet20 cifar10 default
+2022-11-24 08:39:42,657 | INFO | processed resnet20 cifar10 relun
+2022-11-24 08:39:42,939 | INFO | processed resnet26 cifar10 default
+2022-11-24 08:39:42,960 | INFO | processed resnet26 cifar10 relun
+2022-11-24 08:39:43,256 | INFO | processed resnet32 cifar10 default
+2022-11-24 08:39:43,272 | INFO | processed resnet32 cifar10 relun
+2022-11-24 08:39:43,597 | INFO | processed resnet44 cifar10 default
+2022-11-24 08:39:43,610 | INFO | processed resnet44 cifar10 relun
+2022-11-24 08:39:43,881 | INFO | processed resnet56 cifar10 default
+2022-11-24 08:39:43,892 | INFO | processed resnet56 cifar10 relun
+2023-01-05 20:37:46,847 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'ReLUN']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_relun/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:46,911 | INFO | processed resnet8 cifar10 default
+2023-01-05 20:37:46,920 | INFO | processed resnet8 cifar10 relun
+2023-01-05 20:37:47,296 | INFO | processed resnet14 cifar10 default
+2023-01-05 20:37:47,307 | INFO | processed resnet14 cifar10 relun
+2023-01-05 20:37:47,603 | INFO | processed resnet20 cifar10 default
+2023-01-05 20:37:47,619 | INFO | processed resnet20 cifar10 relun
+2023-01-05 20:37:47,958 | INFO | processed resnet26 cifar10 default
+2023-01-05 20:37:47,968 | INFO | processed resnet26 cifar10 relun
+2023-01-05 20:37:48,263 | INFO | processed resnet32 cifar10 default
+2023-01-05 20:37:48,272 | INFO | processed resnet32 cifar10 relun
+2023-01-05 20:37:48,572 | INFO | processed resnet44 cifar10 default
+2023-01-05 20:37:48,585 | INFO | processed resnet44 cifar10 relun
+2023-01-05 20:37:48,864 | INFO | processed resnet56 cifar10 default
+2023-01-05 20:37:48,874 | INFO | processed resnet56 cifar10 relun
+2023-01-07 17:24:31,859 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'ReLUN']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_relun/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:24:31,926 | INFO | processed resnet8 cifar10 default
+2023-01-07 17:24:31,937 | INFO | processed resnet8 cifar10 relun
+2023-01-07 17:24:32,330 | INFO | processed resnet14 cifar10 default
+2023-01-07 17:24:32,342 | INFO | processed resnet14 cifar10 relun
+2023-01-07 17:24:32,682 | INFO | processed resnet20 cifar10 default
+2023-01-07 17:24:32,693 | INFO | processed resnet20 cifar10 relun
+2023-01-07 17:24:33,050 | INFO | processed resnet26 cifar10 default
+2023-01-07 17:24:33,064 | INFO | processed resnet26 cifar10 relun
+2023-01-07 17:24:33,565 | INFO | processed resnet32 cifar10 default
+2023-01-07 17:24:33,577 | INFO | processed resnet32 cifar10 relun
+2023-01-07 17:24:34,011 | INFO | processed resnet44 cifar10 default
+2023-01-07 17:24:34,024 | INFO | processed resnet44 cifar10 relun
+2023-01-07 17:24:34,637 | INFO | processed resnet56 cifar10 default
+2023-01-07 17:24:34,649 | INFO | processed resnet56 cifar10 relun
+2023-01-10 15:42:00,099 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['Default', 'ReLUN']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_relun/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:42:00,166 | INFO | processed dnn2 mnist default
+2023-01-10 15:42:00,176 | INFO | processed dnn2 mnist relun
+2023-01-10 15:42:00,610 | INFO | processed dnn3 mnist default
+2023-01-10 15:42:00,619 | INFO | processed dnn3 mnist relun
+2023-01-10 15:42:01,028 | INFO | processed dnn5 mnist default
+2023-01-10 15:42:01,038 | INFO | processed dnn5 mnist relun

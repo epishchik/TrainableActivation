@@ -1,0 +1,41 @@
+model:
+  name: DNN3
+  architecture:
+    in_channels: 784
+    out_channels: 10
+    activation: ReLUN
+
+optimizer:
+  name: Adam
+  parameters:
+    lr: 0.0003
+    weight_decay: 0.00001
+
+scheduler:
+  num: 1
+  scheduler0:
+    name: ExponentialLR
+    parameters:
+      gamma: 0.5
+
+dataset:
+  name: MNIST
+  batch_size: 32
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+
+train:
+  epochs: 10
+  device: cuda:0
+  save_path: ./checkpoints/relun/mnist/
+  log_path: ./logs/relun/mnist/
+  seed: 42
+  save_every: 2
+
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/relun/mnist/
+  log_path: ./logs/relun/mnist/
+  seed: 42

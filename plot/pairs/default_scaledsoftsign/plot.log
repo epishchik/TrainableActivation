@@ -1,0 +1,76 @@
+2022-11-24 08:39:38,895 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'ScaledSoftSign']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_scaledsoftsign/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:38,972 | INFO | processed resnet8 cifar10 default
+2022-11-24 08:39:38,985 | INFO | processed resnet8 cifar10 scaledsoftsign
+2022-11-24 08:39:39,322 | INFO | processed resnet14 cifar10 default
+2022-11-24 08:39:39,335 | INFO | processed resnet14 cifar10 scaledsoftsign
+2022-11-24 08:39:39,639 | INFO | processed resnet20 cifar10 default
+2022-11-24 08:39:39,651 | INFO | processed resnet20 cifar10 scaledsoftsign
+2022-11-24 08:39:39,937 | INFO | processed resnet26 cifar10 default
+2022-11-24 08:39:39,959 | INFO | processed resnet26 cifar10 scaledsoftsign
+2022-11-24 08:39:40,263 | INFO | processed resnet32 cifar10 default
+2022-11-24 08:39:40,277 | INFO | processed resnet32 cifar10 scaledsoftsign
+2022-11-24 08:39:40,612 | INFO | processed resnet44 cifar10 default
+2022-11-24 08:39:40,623 | INFO | processed resnet44 cifar10 scaledsoftsign
+2022-11-24 08:39:40,898 | INFO | processed resnet56 cifar10 default
+2022-11-24 08:39:40,910 | INFO | processed resnet56 cifar10 scaledsoftsign
+2023-01-05 20:37:43,782 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'ScaledSoftSign']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_scaledsoftsign/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:43,846 | INFO | processed resnet8 cifar10 default
+2023-01-05 20:37:43,857 | INFO | processed resnet8 cifar10 scaledsoftsign
+2023-01-05 20:37:44,222 | INFO | processed resnet14 cifar10 default
+2023-01-05 20:37:44,232 | INFO | processed resnet14 cifar10 scaledsoftsign
+2023-01-05 20:37:44,537 | INFO | processed resnet20 cifar10 default
+2023-01-05 20:37:44,550 | INFO | processed resnet20 cifar10 scaledsoftsign
+2023-01-05 20:37:44,875 | INFO | processed resnet26 cifar10 default
+2023-01-05 20:37:44,886 | INFO | processed resnet26 cifar10 scaledsoftsign
+2023-01-05 20:37:45,193 | INFO | processed resnet32 cifar10 default
+2023-01-05 20:37:45,203 | INFO | processed resnet32 cifar10 scaledsoftsign
+2023-01-05 20:37:45,514 | INFO | processed resnet44 cifar10 default
+2023-01-05 20:37:45,524 | INFO | processed resnet44 cifar10 scaledsoftsign
+2023-01-05 20:37:45,831 | INFO | processed resnet56 cifar10 default
+2023-01-05 20:37:45,842 | INFO | processed resnet56 cifar10 scaledsoftsign
+2023-01-07 17:24:28,472 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['Default', 'ScaledSoftSign']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_scaledsoftsign/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:24:28,549 | INFO | processed resnet8 cifar10 default
+2023-01-07 17:24:28,561 | INFO | processed resnet8 cifar10 scaledsoftsign
+2023-01-07 17:24:28,975 | INFO | processed resnet14 cifar10 default
+2023-01-07 17:24:28,986 | INFO | processed resnet14 cifar10 scaledsoftsign
+2023-01-07 17:24:29,322 | INFO | processed resnet20 cifar10 default
+2023-01-07 17:24:29,342 | INFO | processed resnet20 cifar10 scaledsoftsign
+2023-01-07 17:24:29,690 | INFO | processed resnet26 cifar10 default
+2023-01-07 17:24:29,700 | INFO | processed resnet26 cifar10 scaledsoftsign
+2023-01-07 17:24:30,046 | INFO | processed resnet32 cifar10 default
+2023-01-07 17:24:30,057 | INFO | processed resnet32 cifar10 scaledsoftsign
+2023-01-07 17:24:30,418 | INFO | processed resnet44 cifar10 default
+2023-01-07 17:24:30,430 | INFO | processed resnet44 cifar10 scaledsoftsign
+2023-01-07 17:24:30,769 | INFO | processed resnet56 cifar10 default
+2023-01-07 17:24:30,779 | INFO | processed resnet56 cifar10 scaledsoftsign
+2023-01-10 15:41:57,443 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['Default', 'ScaledSoftSign']
+log_path: ./logs/
+plot_path: ./plot/pairs/default_scaledsoftsign/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:57,528 | INFO | processed dnn2 mnist default
+2023-01-10 15:41:57,537 | INFO | processed dnn2 mnist scaledsoftsign
+2023-01-10 15:41:58,251 | INFO | processed dnn3 mnist default
+2023-01-10 15:41:58,264 | INFO | processed dnn3 mnist scaledsoftsign
+2023-01-10 15:41:58,712 | INFO | processed dnn5 mnist default
+2023-01-10 15:41:58,725 | INFO | processed dnn5 mnist scaledsoftsign

@@ -1,0 +1,50 @@
+2023-01-10 11:21:01,546 | INFO | 
+model:
+  name: DNN2
+  architecture:
+    in_channels: 784
+    out_channels: 10
+    activation:
+      name: NormLinComb
+      activations: ['relu', 'sigmoid', 'tanh', 'softsign']
+optimizer:
+  name: Adam
+  parameters:
+    lr: 0.0003
+    weight_decay: 1e-05
+scheduler:
+  num: 1
+  scheduler0:
+    name: ExponentialLR
+    parameters:
+      gamma: 0.5
+dataset:
+  name: MNIST
+  batch_size: 32
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+train:
+  epochs: 10
+  device: cuda:0
+  save_path: ./checkpoints/normlincomb/mnist/
+  log_path: ./logs/normlincomb/mnist/
+  seed: 42
+  save_every: 2
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/normlincomb/mnist/
+  log_path: ./logs/normlincomb/mnist/
+  seed: 42
+2023-01-10 11:21:01,546 | INFO | 
+DNN(
+  (first_fc): Linear(in_features=784, out_features=392, bias=True)
+  (first_act): NormLinComb()
+  (last_fc): Linear(in_features=392, out_features=10, bias=True)
+)
+2023-01-10 11:21:01,547 | INFO | 
+CrossEntropyLoss()
+2023-01-10 11:21:08,111 | INFO | cuda:0 ckpt: ./checkpoints/normlincomb/mnist/dnn2/ep=10_lv=0.18.pth test_loss: 0.1102 test_accuracy: 0.965 test_precision: 0.974 test_recall: 0.965 test_f1: 0.965
+2023-01-10 11:21:14,573 | INFO | cuda:0 ckpt: ./checkpoints/normlincomb/mnist/dnn2/ep=7_lv=0.18.pth test_loss: 0.1114 test_accuracy: 0.965 test_precision: 0.974 test_recall: 0.965 test_f1: 0.965
+2023-01-10 11:21:14,574 | INFO | total_time: 12.956 sec

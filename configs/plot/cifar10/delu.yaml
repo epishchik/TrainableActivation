@@ -1,0 +1,7 @@
+models: [ResNet8, ResNet14, ResNet20, ResNet26, ResNet32, ResNet44, ResNet56]
+datasets: [CIFAR10]
+activations: [DELU]
+log_path: ./logs/
+plot_path: ./plot/delu/
+dpi: 70
+clip: [0.0, 3.0]

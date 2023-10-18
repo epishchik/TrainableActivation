@@ -1,0 +1,52 @@
+2022-11-24 08:39:21,766 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['DELU']
+log_path: ./logs/
+plot_path: ./plot/delu/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:21,828 | INFO | processed resnet8 cifar10 delu
+2022-11-24 08:39:22,095 | INFO | processed resnet14 cifar10 delu
+2022-11-24 08:39:22,355 | INFO | processed resnet20 cifar10 delu
+2022-11-24 08:39:22,626 | INFO | processed resnet26 cifar10 delu
+2022-11-24 08:39:22,890 | INFO | processed resnet32 cifar10 delu
+2022-11-24 08:39:23,177 | INFO | processed resnet44 cifar10 delu
+2022-11-24 08:39:23,425 | INFO | processed resnet56 cifar10 delu
+2023-01-05 20:37:25,980 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['DELU']
+log_path: ./logs/
+plot_path: ./plot/delu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:26,051 | INFO | processed resnet8 cifar10 delu
+2023-01-05 20:37:26,581 | INFO | processed resnet14 cifar10 delu
+2023-01-05 20:37:26,907 | INFO | processed resnet20 cifar10 delu
+2023-01-05 20:37:27,254 | INFO | processed resnet26 cifar10 delu
+2023-01-05 20:37:27,531 | INFO | processed resnet32 cifar10 delu
+2023-01-05 20:37:27,816 | INFO | processed resnet44 cifar10 delu
+2023-01-05 20:37:28,108 | INFO | processed resnet56 cifar10 delu
+2023-01-07 17:23:59,317 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['DELU']
+log_path: ./logs/
+plot_path: ./plot/delu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:23:59,389 | INFO | processed resnet8 cifar10 delu
+2023-01-07 17:24:00,148 | INFO | processed resnet14 cifar10 delu
+2023-01-07 17:24:00,578 | INFO | processed resnet20 cifar10 delu
+2023-01-07 17:24:00,933 | INFO | processed resnet26 cifar10 delu
+2023-01-07 17:24:01,237 | INFO | processed resnet32 cifar10 delu
+2023-01-07 17:24:01,586 | INFO | processed resnet44 cifar10 delu
+2023-01-07 17:24:01,951 | INFO | processed resnet56 cifar10 delu
+2023-01-10 15:41:46,019 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['DELU']
+log_path: ./logs/
+plot_path: ./plot/delu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:46,078 | INFO | processed dnn2 mnist delu
+2023-01-10 15:41:46,439 | INFO | processed dnn3 mnist delu
+2023-01-10 15:41:46,703 | INFO | processed dnn5 mnist delu

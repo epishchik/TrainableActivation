@@ -1,0 +1,19 @@
+models: [DNN2, DNN3, DNN5]
+datasets: [MNIST]
+activations:
+  [
+    Default,
+    LinComb,
+    ReLUN,
+    ScaledSoftSign,
+    ShiLU,
+    HELU,
+    DELU,
+    SinLU,
+    CosLU,
+    NormLinComb,
+  ]
+log_path: ./logs/
+plot_path: ./plot/full/
+dpi: 70
+clip: [0.0, 3.0]

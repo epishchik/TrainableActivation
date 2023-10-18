@@ -1,0 +1,52 @@
+2022-11-24 08:39:24,510 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['SinLU']
+log_path: ./logs/
+plot_path: ./plot/sinlu/
+dpi: 70
+clip: [0.0, 3.0]
+2022-11-24 08:39:24,568 | INFO | processed resnet8 cifar10 sinlu
+2022-11-24 08:39:24,829 | INFO | processed resnet14 cifar10 sinlu
+2022-11-24 08:39:25,087 | INFO | processed resnet20 cifar10 sinlu
+2022-11-24 08:39:25,341 | INFO | processed resnet26 cifar10 sinlu
+2022-11-24 08:39:25,626 | INFO | processed resnet32 cifar10 sinlu
+2022-11-24 08:39:25,917 | INFO | processed resnet44 cifar10 sinlu
+2022-11-24 08:39:26,172 | INFO | processed resnet56 cifar10 sinlu
+2023-01-05 20:37:29,159 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['SinLU']
+log_path: ./logs/
+plot_path: ./plot/sinlu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-05 20:37:29,282 | INFO | processed resnet8 cifar10 sinlu
+2023-01-05 20:37:29,624 | INFO | processed resnet14 cifar10 sinlu
+2023-01-05 20:37:29,901 | INFO | processed resnet20 cifar10 sinlu
+2023-01-05 20:37:30,187 | INFO | processed resnet26 cifar10 sinlu
+2023-01-05 20:37:30,485 | INFO | processed resnet32 cifar10 sinlu
+2023-01-05 20:37:30,753 | INFO | processed resnet44 cifar10 sinlu
+2023-01-05 20:37:31,015 | INFO | processed resnet56 cifar10 sinlu
+2023-01-07 17:24:03,118 | INFO | models: ['ResNet8', 'ResNet14', 'ResNet20', 'ResNet26', 'ResNet32', 'ResNet44', 'ResNet56']
+datasets: ['CIFAR10']
+activations: ['SinLU']
+log_path: ./logs/
+plot_path: ./plot/sinlu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-07 17:24:03,182 | INFO | processed resnet8 cifar10 sinlu
+2023-01-07 17:24:03,630 | INFO | processed resnet14 cifar10 sinlu
+2023-01-07 17:24:03,947 | INFO | processed resnet20 cifar10 sinlu
+2023-01-07 17:24:04,292 | INFO | processed resnet26 cifar10 sinlu
+2023-01-07 17:24:04,643 | INFO | processed resnet32 cifar10 sinlu
+2023-01-07 17:24:05,141 | INFO | processed resnet44 cifar10 sinlu
+2023-01-07 17:24:05,487 | INFO | processed resnet56 cifar10 sinlu
+2023-01-10 15:41:47,743 | INFO | models: ['DNN2', 'DNN3', 'DNN5']
+datasets: ['MNIST']
+activations: ['SinLU']
+log_path: ./logs/
+plot_path: ./plot/sinlu/
+dpi: 70
+clip: [0.0, 3.0]
+2023-01-10 15:41:47,808 | INFO | processed dnn2 mnist sinlu
+2023-01-10 15:41:48,159 | INFO | processed dnn3 mnist sinlu
+2023-01-10 15:41:48,457 | INFO | processed dnn5 mnist sinlu

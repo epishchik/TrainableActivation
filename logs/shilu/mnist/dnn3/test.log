@@ -1,0 +1,52 @@
+2023-01-10 11:25:06,464 | INFO | 
+model:
+  name: DNN3
+  architecture:
+    in_channels: 784
+    out_channels: 10
+    activation: ShiLU
+optimizer:
+  name: Adam
+  parameters:
+    lr: 0.0003
+    weight_decay: 1e-05
+scheduler:
+  num: 1
+  scheduler0:
+    name: ExponentialLR
+    parameters:
+      gamma: 0.5
+dataset:
+  name: MNIST
+  batch_size: 32
+  split:
+    train: 0.9
+    valid: 0.1
+    test: 1.0
+train:
+  epochs: 10
+  device: cuda:0
+  save_path: ./checkpoints/shilu/mnist/
+  log_path: ./logs/shilu/mnist/
+  seed: 42
+  save_every: 2
+test:
+  device: cuda:0
+  checkpoint: ./checkpoints/shilu/mnist/
+  log_path: ./logs/shilu/mnist/
+  seed: 42
+2023-01-10 11:25:06,465 | INFO | 
+DNN(
+  (first_fc): Linear(in_features=784, out_features=392, bias=True)
+  (first_act): ShiLU()
+  (layers): Sequential(
+    (0): Linear(in_features=392, out_features=196, bias=True)
+    (1): ShiLU()
+  )
+  (last_fc): Linear(in_features=196, out_features=10, bias=True)
+)
+2023-01-10 11:25:06,465 | INFO | 
+CrossEntropyLoss()
+2023-01-10 11:25:12,936 | INFO | cuda:0 ckpt: ./checkpoints/shilu/mnist/dnn3/ep=8_lv=0.18.pth test_loss: 0.1120 test_accuracy: 0.966 test_precision: 0.975 test_recall: 0.966 test_f1: 0.966
+2023-01-10 11:25:19,317 | INFO | cuda:0 ckpt: ./checkpoints/shilu/mnist/dnn3/ep=10_lv=0.18.pth test_loss: 0.1118 test_accuracy: 0.966 test_precision: 0.974 test_recall: 0.966 test_f1: 0.966
+2023-01-10 11:25:19,317 | INFO | total_time: 12.779 sec
