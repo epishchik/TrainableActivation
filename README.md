@@ -79,6 +79,35 @@ $$ReLU(x) = max(0, x)$$
 <img src="plot/functions/shilu.png" alt="ShiLU" width="600"/>
 </p>
 
+<h2 align="center">INSTALLATION</h2>
+
+Create venv.
+```bash
+python3 -m venv venv
+```
+
+Activate venv.
+```bash
+source venv/bin/activate
+```
+
+Install dependencies.
+```bash
+pip install -r requirements.txt
+```
+
+<h2 align="center">PROJECT STRUCTURE</h2>
+
+There are 3 main files - [train.py](train.py), [test.py](test.py), [plot.py](plot.py). You should run train.py first, then test.py, then plot.py.
+
+Use whatever configuration you want to test. Configurations can be found in the [configs](configs/) folder, train.py and test.py use the same config. There are several plot configurations in the [configs/plot](configs/plot) folder.
+
+There are many predefined run scripts in the [scripts](scripts/) folder, just run one of them as .sh, [scripts/train.sh](scripts/train.sh) and [scripts/test.sh](scripts/test.sh) are scripts to train and test all possible configurations, [scripts/plot.sh](scripts/plot.sh) to plot results after training and testing.
+
+All the results of the train / test phases are in the [logs](logs/) folder.
+
+All proposed trainable activations are in [activation.py](activation.py).
+
 <h2 align="center">CITATION</h2>
 
 <p align="center">
