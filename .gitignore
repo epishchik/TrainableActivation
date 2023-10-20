@@ -1,5 +1,6 @@
 .vscode/
 .idea/
+.DS_Store
 **__pycache__**
 test_checkpoints/
 test_logs/
@@ -11,3 +12,4 @@ paper/
 clear*.sh
 done.txt
 model/rnn.py
+venv*/

@@ -10,9 +10,10 @@ class LinComb(nn.Module):
         self.params_range = range(n)
 
         for idx in self.params_range:
-            self.__setattr__(f'my_weight{idx}',
-                             nn.Parameter(torch.tensor(1.0 / n,
-                                                       requires_grad=True)))
+            self.__setattr__(
+                f'my_weight{idx}',
+                nn.Parameter(torch.tensor(1.0 / n, requires_grad=True))
+            )
 
         self.acts = activations
 
@@ -34,9 +35,10 @@ class NormLinComb(nn.Module):
         self.params_range = range(n)
 
         for idx in self.params_range:
-            self.__setattr__(f'my_weight{idx}',
-                             nn.Parameter(torch.tensor(1.0 / n,
-                                                       requires_grad=True)))
+            self.__setattr__(
+                f'my_weight{idx}',
+                nn.Parameter(torch.tensor(1.0 / n, requires_grad=True))
+            )
 
         self.acts = activations
 

@@ -62,21 +62,25 @@ class BasicBlockCifar(nn.Module):
     def __init__(self, in_planes, planes, stride=1, option='A'):
         super(BasicBlockCifar, self).__init__()
 
-        self.conv1 = nn.Conv2d(in_planes,
-                               planes,
-                               kernel_size=3,
-                               stride=stride,
-                               padding=1,
-                               bias=False)
+        self.conv1 = nn.Conv2d(
+            in_planes,
+            planes,
+            kernel_size=3,
+            stride=stride,
+            padding=1,
+            bias=False
+        )
 
         self.bn1 = nn.BatchNorm2d(planes)
 
-        self.conv2 = nn.Conv2d(planes,
-                               planes,
-                               kernel_size=3,
-                               stride=1,
-                               padding=1,
-                               bias=False)
+        self.conv2 = nn.Conv2d(
+            planes,
+            planes,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.bn2 = nn.BatchNorm2d(planes)
 
@@ -102,12 +106,14 @@ class ResNetCifar(nn.Module):
         super(ResNetCifar, self).__init__()
         self.in_planes = 16
 
-        self.conv1 = nn.Conv2d(3,
-                               16,
-                               kernel_size=3,
-                               stride=1,
-                               padding=1,
-                               bias=False)
+        self.conv1 = nn.Conv2d(
+            3,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.bn1 = nn.BatchNorm2d(16)
 
@@ -151,12 +157,14 @@ class ResNet8(nn.Module):
 
         self.model = ResNetCifar(BasicBlockCifar, [1, 1, 1])
 
-        self.model.conv1 = nn.Conv2d(in_channels,
-                                     16,
-                                     kernel_size=3,
-                                     stride=1,
-                                     padding=1,
-                                     bias=False)
+        self.model.conv1 = nn.Conv2d(
+            in_channels,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.model.fc = nn.Linear(64, out_channels, bias=True)
         replace_layers(train_act, self.model, nn.ReLU)
@@ -181,12 +189,14 @@ class ResNet14(nn.Module):
 
         self.model = ResNetCifar(BasicBlockCifar, [2, 2, 2])
 
-        self.model.conv1 = nn.Conv2d(in_channels,
-                                     16,
-                                     kernel_size=3,
-                                     stride=1,
-                                     padding=1,
-                                     bias=False)
+        self.model.conv1 = nn.Conv2d(
+            in_channels,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.model.fc = nn.Linear(64, out_channels, bias=True)
         replace_layers(train_act, self.model, nn.ReLU)
@@ -211,12 +221,14 @@ class ResNet20(nn.Module):
 
         self.model = ResNetCifar(BasicBlockCifar, [3, 3, 3])
 
-        self.model.conv1 = nn.Conv2d(in_channels,
-                                     16,
-                                     kernel_size=3,
-                                     stride=1,
-                                     padding=1,
-                                     bias=False)
+        self.model.conv1 = nn.Conv2d(
+            in_channels,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.model.fc = nn.Linear(64, out_channels, bias=True)
         replace_layers(train_act, self.model, nn.ReLU)
@@ -241,12 +253,14 @@ class ResNet26(nn.Module):
 
         self.model = ResNetCifar(BasicBlockCifar, [4, 4, 4])
 
-        self.model.conv1 = nn.Conv2d(in_channels,
-                                     16,
-                                     kernel_size=3,
-                                     stride=1,
-                                     padding=1,
-                                     bias=False)
+        self.model.conv1 = nn.Conv2d(
+            in_channels,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.model.fc = nn.Linear(64, out_channels, bias=True)
         replace_layers(train_act, self.model, nn.ReLU)
@@ -271,12 +285,14 @@ class ResNet32(nn.Module):
 
         self.model = ResNetCifar(BasicBlockCifar, [5, 5, 5])
 
-        self.model.conv1 = nn.Conv2d(in_channels,
-                                     16,
-                                     kernel_size=3,
-                                     stride=1,
-                                     padding=1,
-                                     bias=False)
+        self.model.conv1 = nn.Conv2d(
+            in_channels,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.model.fc = nn.Linear(64, out_channels, bias=True)
         replace_layers(train_act, self.model, nn.ReLU)
@@ -301,12 +317,14 @@ class ResNet44(nn.Module):
 
         self.model = ResNetCifar(BasicBlockCifar, [7, 7, 7])
 
-        self.model.conv1 = nn.Conv2d(in_channels,
-                                     16,
-                                     kernel_size=3,
-                                     stride=1,
-                                     padding=1,
-                                     bias=False)
+        self.model.conv1 = nn.Conv2d(
+            in_channels,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.model.fc = nn.Linear(64, out_channels, bias=True)
         replace_layers(train_act, self.model, nn.ReLU)
@@ -331,12 +349,14 @@ class ResNet56(nn.Module):
 
         self.model = ResNetCifar(BasicBlockCifar, [9, 9, 9])
 
-        self.model.conv1 = nn.Conv2d(in_channels,
-                                     16,
-                                     kernel_size=3,
-                                     stride=1,
-                                     padding=1,
-                                     bias=False)
+        self.model.conv1 = nn.Conv2d(
+            in_channels,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False
+        )
 
         self.model.fc = nn.Linear(64, out_channels, bias=True)
         replace_layers(train_act, self.model, nn.ReLU)

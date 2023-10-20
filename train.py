@@ -68,13 +68,17 @@ def train():
 
     train_dataset, valid_dataset, _ = Dataset(args['dataset'])
 
-    train_data_loader = DataLoader(train_dataset,
-                                   batch_size=bs,
-                                   shuffle=True)
+    train_data_loader = DataLoader(
+        train_dataset,
+        batch_size=bs,
+        shuffle=True
+    )
 
-    valid_data_loader = DataLoader(valid_dataset,
-                                   batch_size=bs,
-                                   shuffle=True)
+    valid_data_loader = DataLoader(
+        valid_dataset,
+        batch_size=bs,
+        shuffle=True
+    )
 
     init_time = time.time()
     best_loss = 99999999.0
@@ -155,10 +159,12 @@ def train():
     print_str += f'total_time: {(last_time - init_time):.3f} sec'
     logger.info(print_str)
 
-    np.savez_compressed(log_path + 'losses.npz',
-                        epochs_npz,
-                        train_loss_npz,
-                        valid_loss_npz)
+    np.savez_compressed(
+        log_path + 'losses.npz',
+        epochs_npz,
+        train_loss_npz,
+        valid_loss_npz
+    )
 
 
 if __name__ == '__main__':

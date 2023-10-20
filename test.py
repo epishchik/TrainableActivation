@@ -49,9 +49,11 @@ def test():
 
     _, _, test_dataset = Dataset(args['dataset'])
 
-    test_data_loader = DataLoader(test_dataset,
-                                  batch_size=bs,
-                                  shuffle=False)
+    test_data_loader = DataLoader(
+        test_dataset,
+        batch_size=bs,
+        shuffle=False
+    )
 
     start = time.time()
 

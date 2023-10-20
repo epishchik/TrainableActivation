@@ -21,9 +21,11 @@ def Scheduler(optimizer, parameters):
             scheduler = getattr(lr_scheduler, name)
             scheds.append(scheduler(optimizer, **params))
 
-        return lr_scheduler.SequentialLR(optimizer,
-                                         schedulers=scheds,
-                                         milestones=milestones)
+        return lr_scheduler.SequentialLR(
+            optimizer,
+            schedulers=scheds,
+            milestones=milestones
+        )
 
 
 def print_scheduler(scheduler, parameters):

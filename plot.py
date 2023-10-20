@@ -13,17 +13,19 @@ finally:
 warnings.filterwarnings('ignore')
 
 
-def _plot(ax,
-          idx,
-          dataset,
-          log_path,
-          x_label,
-          y_label,
-          model,
-          activations,
-          clip_min,
-          clip_max,
-          logger):
+def _plot(
+    ax,
+    idx,
+    dataset,
+    log_path,
+    x_label,
+    y_label,
+    model,
+    activations,
+    clip_min,
+    clip_max,
+    logger
+):
     ax.set_xlabel(x_label)
     ax.set_ylabel(y_label)
     ax.set_title(f'{dataset.lower()}')
@@ -42,25 +44,34 @@ def _plot(ax,
         train_loss = npz['arr_1']
         valid_loss = npz['arr_2']
 
-        train_loss = np.clip(train_loss,
-                             a_min=clip_min,
-                             a_max=clip_max)
+        train_loss = np.clip(
+            train_loss,
+            a_min=clip_min,
+            a_max=clip_max
+        )
 
-        valid_loss = np.clip(valid_loss,
-                             a_min=clip_min,
-                             a_max=clip_max)
+        valid_loss = np.clip(
+            valid_loss,
+            a_min=clip_min,
+            a_max=clip_max
+        )
 
         if idx % 2 == 0:
-            ax.plot(epochs,
-                    train_loss,
-                    label=f'train_{act.lower()}')
+            ax.plot(
+                epochs,
+                train_loss,
+                label=f'train_{act.lower()}'
+            )
         else:
-            ax.plot(epochs,
-                    valid_loss,
-                    label=f'valid_{act.lower()}')
+            ax.plot(
+                epochs,
+                valid_loss,
+                label=f'valid_{act.lower()}'
+            )
         if idx % 2 == 1:
             logger.info(
-                f'processed {model.lower()} {dataset.lower()} {act.lower()}')
+                f'processed {model.lower()} {dataset.lower()} {act.lower()}'
+            )
 
     ax.legend()
 
@@ -94,40 +105,46 @@ def plot():
     for model in models:
         _, axes = plt.subplots(num_subplots, 2, figsize=(15, 5), dpi=dpi)
 
-        plt.subplots_adjust(left=0.1,
-                            bottom=0.1,
-                            right=0.9,
-                            top=0.9,
-                            wspace=0.3,
-                            hspace=0.3)
+        plt.subplots_adjust(
+            left=0.1,
+            bottom=0.1,
+            right=0.9,
+            top=0.9,
+            wspace=0.3,
+            hspace=0.3
+        )
 
         if num_subplots > 1:
             for i in range(len(axes)):
                 for j in range(len(axes[i])):
-                    _plot(axes[i, j],
-                          j,
-                          datasets[i],
-                          log_path,
-                          x_label,
-                          y_label,
-                          model,
-                          activations,
-                          clip_min,
-                          clip_max,
-                          logger)
+                    _plot(
+                        axes[i, j],
+                        j,
+                        datasets[i],
+                        log_path,
+                        x_label,
+                        y_label,
+                        model,
+                        activations,
+                        clip_min,
+                        clip_max,
+                        logger
+                    )
         else:
             for i, ax in enumerate(axes):
-                _plot(ax,
-                      i,
-                      datasets[i // 2],
-                      log_path,
-                      x_label,
-                      y_label,
-                      model,
-                      activations,
-                      clip_min,
-                      clip_max,
-                      logger)
+                _plot(
+                    ax,
+                    i,
+                    datasets[i // 2],
+                    log_path,
+                    x_label,
+                    y_label,
+                    model,
+                    activations,
+                    clip_min,
+                    clip_max,
+                    logger
+                )
 
         plt.savefig(f'{plot_path}{model.lower()}.pdf', dpi=dpi)
 
