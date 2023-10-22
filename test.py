@@ -38,7 +38,7 @@ def test():
 
     log_path = f"{args['test']['log_path']}{args['model']['name'].lower()}/"
     if not os.path.exists(log_path):
-        os.mkdir(log_path)
+        os.system(f'mkdir -p {log_path}')
     logger = get_logger(log_path + 'test.log')
 
     model = model.to(device)

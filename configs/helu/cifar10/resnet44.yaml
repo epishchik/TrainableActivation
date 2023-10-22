@@ -30,7 +30,7 @@ dataset:
 
 train:
   epochs: 90
-  device: cuda:1
+  device: cuda:0
   save_path: ./checkpoints/helu/cifar10/
   log_path: ./logs/helu/cifar10/
   seed: 42
