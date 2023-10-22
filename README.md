@@ -108,6 +108,30 @@ All the results of the train / test phases are in the [logs](logs/) folder.
 
 All proposed trainable activations are in [activation.py](activation.py).
 
+<h2 align="center">HOW TO RUN</h2>
+
+Let's say I want to train and test the ResNet-8 model with CosLU trainable activation on the CIFAR-10 dataset.
+```python
+python train.py --config configs/coslu/cifar10/resnet8.yaml
+python test.py --config configs/coslu/cifar10/resnet8.yaml
+```
+
+If you want to train and test all proposed trainable activations with a specific model and dataset, you can use the script from the [scripts](scripts/) folder. For example, train and test the DNN2 model on the MNIST dataset.
+```bash
+sh scripts/dnn2_mnist.sh
+```
+
+Train and test all possible configurations.
+```bash
+sh scripts/train.sh
+sh scripts/test.sh
+```
+
+Plot graphics for all configurations, it will work even if some configurations haven't been trained.
+```bash
+sh scripts/plot.sh
+```
+
 <h2 align="center">CITATION</h2>
 
 <p align="center">
