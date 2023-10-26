@@ -37,8 +37,7 @@ def test():
     checkpoints = [ckpt_path + ckpt for ckpt in os.listdir(ckpt_path)]
 
     log_path = f"{args['test']['log_path']}{args['model']['name'].lower()}/"
-    if not os.path.exists(log_path):
-        os.system(f'mkdir -p {log_path}')
+    os.makedirs(log_path, exist_ok=True)
     logger = get_logger(log_path + 'test.log')
 
     model = model.to(device)

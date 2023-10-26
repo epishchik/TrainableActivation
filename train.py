@@ -49,13 +49,11 @@ def train():
         model.load_state_dict(torch.load(args['train']['checkpoint']))
 
     log_path = f"{args['train']['log_path']}{args['model']['name'].lower()}/"
-    if not os.path.exists(log_path):
-        os.system(f'mkdir -p {log_path}')
+    os.makedirs(log_path, exist_ok=True)
     logger = get_logger(log_path + 'train.log')
 
     save_path = f"{args['train']['save_path']}{args['model']['name'].lower()}/"
-    if not os.path.exists(save_path):
-        os.system(f'mkdir -p {save_path}')
+    os.makedirs(save_path, exist_ok=True)
 
     model = model.to(device)
 

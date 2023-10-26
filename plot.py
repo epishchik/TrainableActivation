@@ -95,9 +95,7 @@ def plot():
     log_path = args['log_path']
 
     dpi = args['dpi']
-
-    if not os.path.exists(plot_path):
-        os.system(f'mkdir -p {plot_path}')
+    os.makedirs(plot_path, exist_ok=True)
 
     logger = get_logger(plot_path + 'plot.log')
     logger.info(args_str)
